@@ -1,23 +1,64 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div>
+  <section class="info">
+    <div class="container">
+      <div class="row" style="margin-bottom:25px;">
+        <div class="col-md-8 offset-md-2 text-center">
+          <img class="img-fluid" src="/assets/img/IMG_3412 2.png" width="40%" height="auto"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center" style="color:#040404">
+          <h1 style="font-weight: 700">
+            Hey, I'm Eren.
+          </h1>
+          <h3>
+            Developer | CS Student
+          </h3>
+        </div>
+      </div>
+      <div class="row" style="margin-top:25px;">
+        <div class="col-md-8 offset-md-2 text-center">
+          {% include icon-github.html username=site.github_username %}
+          {% include icon-linkedin.html username=site.linkedin_username %}
+          {% include button-resume.html %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="companies" style="margin-top:40px;margin-bottom:40px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <h1>Companies that I have interned with</h1>
+        </div>
+      </div>
+      <div class="row" style="align-items:center">
+        <div class="col-md-4 text-center company-img-767 company-hover">
+          <img class="img-fluid" src="/assets/img/dmw.png" width="200px"/>
+        </div>
+        <div class="col-md-4 text-center company-img-767 company-hover">
+          <a href="http://www.ziraatteknoloji.com/">
+            <img class="vcenter img-fluid" src="/assets/img/ziraatteknoloji.png" width="200px" height="auto"/>
+          </a>
+        </div>
+        <div class="col-md-4 text-center company-img-767 company-hover">
+          <a href="http://www.dogantv.com.tr/bilgitoplumuhizmetleri/default.aspx">
+            <img class="img-fluid" src="/assets/img/dtvh.png" width="150px" height="auto"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info about" style="padding-top:40px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <h4>guitarist || coder || redditor || book lover || geek || student</h4>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

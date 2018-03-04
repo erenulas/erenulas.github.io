@@ -1,27 +1,81 @@
-<header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+<header id="hdr">
+  <div class="container">
+    <div class="collapse contact-collapse" id="collapseContact" style="padding-top:40px">
+    <div class="row" style="align-items:center">
+          <div class="col-md-3 offset-md-3">
+            <img src="/assets/img/contact-img.png" width="300px" />
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+                {% include contact.html %}
+            </div>
+          </div>
       </div>
-    </nav>
+    </div>
+    <div class="row">
+        <div class="navbar navbar-expand-lg navbar-default nav-max-991" style="width:100%">
 
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: calc(50% - 50px);">
+              <img class="img-fluid" src="/assets/img/214e2e2c-3a98-46f6-9b61-50c57a0d8fca-d657d0eb-dd95-4ddd-a346-57a67bb6fb8a-v1.png" width="80px" height="auto"/>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto" style="align-items: center">
+                
+                <li class="nav-item">
+                  <a class="nav-link new-navbar-item disabled" href="/about">
+                    ABOUT
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link new-navbar-item disabled" href="/portfolio">
+                    PORTFOLIO
+                  </a>
+                </li>
+                  
+                <li class="nav-item vcenter nav-img-collapse">
+                  <a class="nav-link disabled" href="{{site.baseurl}}">
+                    <img class="img-fluid" src="/assets/img/a11c24af-f3d6-4898-9977-b9c936e81c50-d657d0eb-dd95-4ddd-a346-57a67bb6fb8a-v1.png" width="80px" height="80px" />
+                  </a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link new-navbar-item disabled" href="">
+                    BLOG
+                  </a>
+                </li>
+                
+                <li class="contact-link nav-item">
+                  <a data-toggle="collapse" class="nav-link new-navbar-item" href="#collapseContact" aria-expanded="false" aria-controls="collapseContact" onclick="openContact();">
+                    CONTACT
+                  </a>
+                  <script>
+                    function openContact() {
+                      //code
+                      var x = document.getElementById("hdr");
+                      if(x.style.position == "fixed")
+                        x.style.position = "absolute"
+                      else
+                        x.style.position = "fixed"
+                      
+                      if(x.style.backgroundColor != "white")
+                        x.style.backgroundColor = "white";
+                      else
+                        setTimeout(updateHeader, 300)
+                    }
+                    function updateHeader() {
+                      var x = document.getElementById("hdr");
+                      x.style.backgroundColor = "transparent"
+                    }
+                  </script>
+                </li>
+                <li class="contact-info nav-item" style="margin-top:40px; padding-bottom: 20px">
+                    {% include contact.html %}
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
   </div>
-
 </header>

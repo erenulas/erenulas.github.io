@@ -11,17 +11,24 @@
 title: Eren Ulaş
 email: eren.ulas@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  About Eren Ulaş
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
+author: Eren Ulaş
 github_username: erenulas
 linkedin_username: erenulas
 repository: erenulas/erenulas.github.io
+logo: favicon.png
+social:
+  name: Eren Ulaş
+  links:
+    - https://www.linkedin.com/in/erenulas/
+    - https://github.com/erenulas
+
 
 plugins:
-  - "jekyll-github-metadata"
+  - jekyll-git_metadata
+  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown

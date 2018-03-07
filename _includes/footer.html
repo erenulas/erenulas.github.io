@@ -1,3 +1,26 @@
-<footer style="margin-top:40px; margin-bottom:40px;">
-    {% include contact.html %}
+<footer style="margin-top:40px;">
+    <section class="contact" style="margin-bottom:30px">
+        {% include contact.html %}
+    </section>
+    <section class="about-site" style="padding-bottom:30px;background-color:#232020;padding-top:40px">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-2"></div>
+                <div class="col-md-4 text-center" style="color:#ffcf00">
+                        Made with <img src="/assets/img/if_heart_299063.png"> in Istanbul<br>
+                        Powered by <a style="color:#4cb944" href="https://jekyllrb.com/">Jekyll</a><br>
+                        Proudly hosted by <a style="color:#4cb944" href="https://github.com/">GitHub</a>
+                </div>
+                <div class="col-md-4 text-center" style="color:#ffcf00">
+                    <p>
+                        Last updated with commit <a style="color:#4cb944" href="https://github.com/erenulas/erenulas.github.io/commits/master">
+                            @{{ site.git["last_commit"]["short_sha"] }}
+                        </a> <br>
+                        on {{ site.git["last_commit"]["commit_date"] | date: "%B %-d, %Y" }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </footer>

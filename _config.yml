@@ -28,6 +28,7 @@ social:
 
 plugins:
   - jekyll-seo-tag
+  - "jekyll-github-metadata"
 
 # Build settings
 markdown: kramdown

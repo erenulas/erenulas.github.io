@@ -1,7 +1,7 @@
 <header id="hdr">
   <div class="container">
-    <div class="collapse contact-collapse" id="collapseContact" style="padding-top:40px">
-    <div class="row" style="align-items:center">
+    <div class="collapse contact-collapse" id="collapseContact">
+    <div class="row" style="align-items:center;padding-top:40px">
           <div class="col-md-3 offset-md-3">
             <img src="/assets/img/contact-img.png" width="300px" />
           </div>
@@ -62,7 +62,7 @@
                       if(x.style.backgroundColor != "white")
                         x.style.backgroundColor = "white";
                       else
-                        setTimeout(updateHeader, 300)
+                        setTimeout(updateHeader, 600)
                     }
                     function updateHeader() {
                       var x = document.getElementById("hdr");

@@ -1,0 +1,17 @@
+- rows:
+  - name: Date My Wardrobe
+    url:
+    image: dmw.png
+    width: 200px
+
+
+  - name: Ziraat Teknoloji
+    url: http://www.ziraatteknoloji.com/
+    image: ziraatteknoloji.png
+    width: 200px
+
+
+  - name: Doğan TV Holding
+    url: http://www.dogantv.com.tr/bilgitoplumuhizmetleri/default.aspx
+    image: dtvh.png
+    width: 150px

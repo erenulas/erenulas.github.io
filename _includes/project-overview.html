@@ -1,0 +1,49 @@
+<div class="modal fade" id="{{include.detail.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content project-modal-content">
+            <div class="modal-header project-modal-header">
+                <div class="row">
+                    <div class="col-md-3 col-4">
+                        <img style="border-radius:0.3rem" class="img-fluid" src="/assets/img/portfolio/{{include.detail.image}}"/>
+                    </div>
+                    <div class="col-md-8 col-8">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            {{include.detail.title}}
+                        </h5>
+                        <h6>
+                            Supervisor - {{include.detail.supervisor}}
+                        </h6>
+                        <h6>
+                            <i>
+                                {{include.detail.technologies}}
+                            </i>
+                        </h6>
+                    </div>
+                </div>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="color:white">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              {{include.detail.description}}
+            </div>
+            <div class="modal-footer" style="border:0px;background-color:#ffcf00;color:#232020">
+                <div class="container">
+                        <div class="row">
+                                <h5>GitHub Links</h5>
+                            </div>
+                            <div class="row">
+                                {% for part in {{include.detail.parts}} %}
+                                <a href="{{part.github-url}}" target="_blank">
+                                    <button type="button" class="btn btn-link btn-sm contact" style="border:1px solid #232020;color:#232020;margin-bottom:0.8rem;margin-right:0.8rem;">
+                                        {{part.name}}
+                                    </button>
+                                </a>
+                                {% endfor %}
+                            </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>

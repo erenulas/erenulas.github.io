@@ -1,0 +1,101 @@
+- rows:
+  - title: Genetic Algorithm for MWISP
+    id: genetic-algo
+    image: genetic_algo.png
+    technologies: Python
+    supervisor: Asst. Prof. Ali Haydar Özer
+    supervisor-url: http://www.ahozer.com
+    parts:
+      - name: Genetic Algorithm for MWISP
+        github-url: https://github.com/erenulas/genetic-algorithm-MWISP
+    description: 
+
+
+  - title: Student Assistant Bot
+    id: student-assistant-bot
+    image: student_assistant_bot.png
+    technologies: Python, SQLite, Heroku, BeautifulSoup, Telegram Bot API, Google URL Shortener API
+    supervisor: Şakir Bingöl
+    supervisor-url: https://www.linkedin.com/in/şakir-bingöl-1716b35a/
+    parts:
+      - name: Student Assistant Bot
+        github-url: https://github.com/erenulas/student-assistant-bot
+    description: 
+
+
+  - title: P2P Chat
+    id: p2p-chat
+    image: p2p_chat.png
+    technologies: Python, MongoDB
+    supervisor: Asst. Prof. Ömer Korçak
+    supervisor-url: http://mimoza.marmara.edu.tr/~omer.korcak/
+    parts:
+      - name: P2P Chat
+        github-url: https://github.com/erenulas/p2p-chat
+    description:
+
+
+  - title: OrtakBul
+    id: ortakbul
+    image: ortakbul.png
+    technologies: HTML, CSS, JavaScript, AngularJS, Bootstrap, PHP, MySQL
+    supervisor: Assoc. Prof. Borahan Tümer
+    supervisor-url: http://mimoza.marmara.edu.tr/~borahan.tumer/
+    parts:
+      - name: OrtakBul
+        github-url: https://github.com/berkkarabacak/OrtakBul
+    description: 
+
+
+- rows:
+  - title: Coin Collecting Robot
+    id: coin-collecting-robot
+    image: coin_collecting_robot_new.png
+    technologies: Java
+    supervisor: Asst. Prof. Ömer Korçak
+    supervisor-url: http://mimoza.marmara.edu.tr/~omer.korcak/
+    parts:
+      - name: Coin Collecting Robot
+        github-url: https://github.com/erenulas/coin-collecting-robot
+    description:
+
+
+  - title: BMI Calculator
+    id: bmi
+    image: bmi.png
+    technologies: Java, Android
+    supervisor: Assoc. Prof. Ali Fuat Alkaya
+    supervisor-url: http://mimoza.marmara.edu.tr/~falkaya/
+    parts:
+      - name: BMI Calculator
+        github-url: https://github.com/erenulas/BMICalculator
+    description:
+
+
+  - title: Family Tree
+    id: family-tree
+    image: family_tree.png
+    technologies: Prolog
+    supervisor: Asst. Prof. Fatma Corut Ergin
+    supervisor-url: http://mimoza.marmara.edu.tr/~fatma.ergin/
+    parts:
+      - name: Family Tree
+        github-url: https://github.com/erenulas/PrologFamilyTree
+    description:
+    
+
+
+  - title: Processor Design
+    id: processor-design
+    image: cpu.png
+    technologies: Python, Logisim, Verilog
+    supervisor: Asst. Prof. Betül Demiroz Boz
+    supervisor-url: http://mimoza.marmara.edu.tr/~betul.demiroz/
+    parts:
+      - name: Assembler
+        github-url: https://github.com/erenulas/Assembler
+      - name: Logisim Design
+        github-url: https://github.com/erenulas/ProcessorLogisimDesign
+      - name: Verilog Design
+        github-url: https://github.com/erenulas/ProcessorVerilogDesign
+    description:

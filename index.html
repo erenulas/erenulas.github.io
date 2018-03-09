@@ -86,9 +86,9 @@ layout: default
         <div class="row">
           {% for project in row.rows %}
           <div class="col-md-3 col-6 project-img">
-            <a type="button" class="btn project-btn" data-toggle="modal" data-target="#{{project.id}}">
+            <button type="button" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
               <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" />
-            </a>
+            </button>
             {% include project-overview.html detail=project %}
           </div>
           {% endfor %}

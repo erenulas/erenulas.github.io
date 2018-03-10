@@ -38,7 +38,7 @@ layout: default
       {% for row in site.data.companies %}
       <div class="row" style="align-items:center;">
         {% for company in row.rows %}
-        <div class="col-md-4 col-xs-3 text-center logo-767 logo-hover">
+        <div class="col-md-4 col-xs-3 text-center logo-575 logo-hover">
             <a href="{{ company.url }}" target="_blank">
               <img class="img-fluid" src="/assets/img/companies/{{ company.image }}" width="{{ company.width }}" height="auto"/>
             </a>
@@ -62,7 +62,7 @@ layout: default
         <div class="row text-center" style="align-items:center;margin-top:30px;margin-bottom:50px">
           <div class="offset-md-2"></div>
           {% for tech in row.rows %}
-          <div class="col-md-2 col-6 logo-hover logo-767">
+          <div class="col-md-2 col-6 logo-hover logo-575">
           <a href="{{ tech.url }}" target="_blank">
             <img class="img-fluid" src="/assets/img/techs/{{ tech.image }}" width="{{ tech.width }}"/>
           </a>
@@ -86,9 +86,9 @@ layout: default
         <div class="row">
           {% for project in row.rows %}
           <div class="col-md-3 col-6 project-img">
-            <button type="button" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
+            <a href="" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
               <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" />
-            </button>
+            </a>
             {% include project-overview.html detail=project %}
           </div>
           {% endfor %}

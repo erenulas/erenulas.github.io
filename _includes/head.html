@@ -78,8 +78,8 @@
       color: #1f7a8c;
     }
 
-    @media screen and (max-width: 991px) {
-      .nav-max-991 {
+    @media screen and (max-width: 575px) {
+      .nav-max-575 {
         background-color: white;
         box-shadow: 2px 2px 20px #000000;
         
@@ -94,20 +94,31 @@
         
       }
 
+      .logo-575 {
+        margin-top: 20px;
+      }
+      .contact-link {
+        display: none;
+      }
+
     }
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 576px) {
       .contact-info {
         display: none;
       }
     }
 
-    @media screen and (max-width: 767px) {
-      .logo-767 {
-        margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+      .info {
+        padding-top:8rem;
       }
-      .contact-link {
-        display: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      .info {
+        padding-top:6rem;
       }
     }
 
@@ -140,6 +151,11 @@
     }
 
     .btn:focus,.btn:active {
+      outline: none !important;
+      box-shadow: none;
+    }
+
+    a:focus,a:active {
       outline: none !important;
       box-shadow: none;
     }

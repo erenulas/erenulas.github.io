@@ -13,7 +13,7 @@ email: eren.ulas@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
   Hi, I'm Eren Ulaş. A software developer and a cs student at Marmara University. View my profile for more info...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://erenulas.github.io/" # the base hostname & protocol for your site
+url: "https://erenulas.github.io" # the base hostname & protocol for your site
 author: Eren Ulaş
 github_username: erenulas
 linkedin_username: erenulas

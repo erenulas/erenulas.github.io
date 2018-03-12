@@ -28,6 +28,7 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$dark-color-yellow-background: #232020;
 
 
 // Use media queries like this:
@@ -43,6 +44,192 @@ $on-laptop:        800px;
     }
 }
 
+%display-none {
+    display: none;
+}
+
+%button-link-focus-active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn:focus {
+    @extend %button-link-focus-active;
+}
+
+.btn:active {
+    @extend %button-link-focus-active;
+}
+
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+a {
+    color: black;
+    &:hover {
+        color: #1f7a8c;
+    }
+    &:active {
+        @extend %button-link-focus-active;
+    }
+    &:focus {
+        @extend %button-link-focus-active;
+    }
+    &.disabled {
+        pointer-events: none;
+    }
+}
+
+.contact {
+    opacity: 0.6;
+    &:hover {
+        text-decoration: none;
+        opacity: 1;
+    }
+}
+
+.new-navbar-item {
+    color: black;
+    opacity: 1;
+    font: {
+        family: 'Lato', sans-serif;
+        size: 25px;
+        weight: 700;
+    }
+    &:hover {
+        opacity: 0.6;
+        color: black;
+    }
+
+}
+
+.logo-575 {
+    &:hover {
+        opacity: 0.6;
+    }
+    @media screen and (max-width: 575px){
+        margin-top: 20px;
+    }
+}
+
+.info {
+    background:url('../assets/img/rodion-kutsaev-24833-unsplash-copy.jpg') no-repeat center center;
+    background-size:cover;  
+    padding-bottom: 40px;
+    padding-top: 9em;  
+    
+    @media screen and (min-width: 768px) {
+        padding-top:8rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top:6rem;
+    }
+
+}
+
+.navbar-collapse {
+    &.collapse.in {
+        display: block!important;
+    }
+}
+.contact-collapse {
+    &.collapse.in {
+        display: block!important;
+    }
+} 
+
+body {
+    margin: 0;
+    height: 100%;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    width:100%; 
+    position:absolute;
+    z-index:1;
+    @media screen and (max-width: 575px) {
+        position: fixed;
+    }
+}
+
+.nav-max-575 {
+    @media screen and (max-width: 575px) {
+        background-color: white;
+        box-shadow: 2px 2px 20px #000000;        
+    }
+}
+
+.nav-img-collapse {
+    @media screen and (max-width: 575px) {
+        display: none;
+    }
+}
+
+.contact-link {
+    @media screen and (max-width: 575px) {
+        display: none;
+    }   
+}
+
+.contact-info {
+    @media screen and (min-width: 576px) {
+        display: none;
+    }   
+    @extend .section-around;
+}
+
+@mixin img-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.profile-img {
+    @include img-size(40%, auto);
+}
+
+.section-around {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.section-break {
+    background-color: #232020;
+    padding-top:10px;
+    border-radius:20px
+}
+
+.techs-row-around {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.project-btn {
+    padding: 0px 0px;
+    border: 0px;
+}
+
+.project-img {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.project-modal-content {
+    background-color: #232020 !important;
+    color: white ;
+}
+
+.project-modal-header {
+    border: 0px !important;
+    box-shadow: 0px 2px 10px black;
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

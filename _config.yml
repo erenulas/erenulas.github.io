@@ -11,14 +11,14 @@
 title: Eren Ulaş
 email: eren.ulas@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-  About Eren Ulaş
+  Hi, I'm Eren Ulaş. A software developer and a cs student at Marmara University. View my profile for more info...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://erenulas.github.io" # the base hostname & protocol for your site
 author: Eren Ulaş
 github_username: erenulas
 linkedin_username: erenulas
 repository: erenulas/erenulas.github.io
-logo: favicon.png
+logo: favicon.ico
 social:
   name: Eren Ulaş
   links:
@@ -29,6 +29,7 @@ social:
 plugins:
   - jekyll-seo-tag
   - "jekyll-github-metadata"
+  - "jekyll-sitemap"
 
 # Build settings
 markdown: kramdown

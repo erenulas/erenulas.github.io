@@ -6,7 +6,7 @@ layout: default
     <div class="container">
       <div class="row" style="margin-bottom:25px;">
         <div class="col-md-8 offset-md-2 text-center">
-          <img class="img-fluid" src="/assets/img/profile-img.png" width="40%" height="auto"/>
+          <img class="img-fluid profile-img" src="/assets/img/profile-img.png" alt="A picture of Eren Ulaş"/>
         </div>
       </div>
       <div class="row">
@@ -28,7 +28,7 @@ layout: default
       </div>
     </div>
   </section>
-  <section class="companies" style="margin-top:40px;margin-bottom:40px">
+  <section class="companies section-around">
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 text-center">
@@ -38,9 +38,9 @@ layout: default
       {% for row in site.data.companies %}
       <div class="row" style="align-items:center;">
         {% for company in row.rows %}
-        <div class="col-md-4 col-xs-3 text-center logo-575 logo-hover">
+        <div class="col-md-4 col-xs-3 text-center logo-575">
             <a href="{{ company.url }}" target="_blank">
-              <img class="img-fluid" src="/assets/img/companies/{{ company.image }}" width="{{ company.width }}" height="auto"/>
+              <img class="img-fluid" src="/assets/img/companies/{{ company.image }}" width="{{ company.width }}" alt="Logo of {{ company.name }}"/>
             </a>
           </div>
         {% endfor %}
@@ -48,10 +48,10 @@ layout: default
       {% endfor %}
     </div>
   </section>
-  <section class="section-break" >
-    <div class="container" style="background-color: #232020 ;padding-top:10px;border-radius:20px"></div>
+  <section class="section-separator" >
+    <div class="container section-break"></div>
   </section>
-  <section class="techs" style="padding-top:40px;">
+  <section class="techs section-around">
       <div class="container">
         <div class="row" >
             <div class="col-md-8 offset-md-2 text-center">
@@ -59,12 +59,12 @@ layout: default
             </div>
         </div>
         {% for row in site.data.techs %}
-        <div class="row text-center" style="align-items:center;margin-top:30px;margin-bottom:50px">
+        <div class="row text-center techs-row-around" style="align-items:center;">
           <div class="offset-md-2"></div>
           {% for tech in row.rows %}
-          <div class="col-md-2 col-6 logo-hover logo-575">
+          <div class="col-md-2 col-6 logo-575">
           <a href="{{ tech.url }}" target="_blank">
-            <img class="img-fluid" src="/assets/img/techs/{{ tech.image }}" width="{{ tech.width }}"/>
+            <img class="img-fluid" src="/assets/img/techs/{{ tech.image }}" width="{{ tech.width }}" alt="Logo of {{ tech.name }}"/>
           </a>
         </div>
           {% endfor %}
@@ -72,14 +72,15 @@ layout: default
         {% endfor %}
       </div>
     </section>
-    <section class="section-break" >
-      <div class="container" style="background-color: #232020 ;padding-top:10px;border-radius:20px"></div>
+    <section class="section-separator" >
+      <div class="container section-break"></div>
     </section>
-    <section class="projects" id="projects" style="margin-top:40px;margin-bottom:20px">
+    <section class="projects section-around" id="projects">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2 text-center" style="margin-bottom:30px">
             <h2>Some of my projects</h2>
+            <p style="font-size:12px;opacity:0.6">* Press on images for more info...</p>
           </div>
         </div>
         {% for row in site.data.projects %}
@@ -87,7 +88,7 @@ layout: default
           {% for project in row.rows %}
           <div class="col-md-3 col-6 project-img">
             <a href="" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
-              <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" />
+              <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" alt="Logo for {{ project.title }} project"/>
             </a>
             {% include project-overview.html detail=project %}
           </div>

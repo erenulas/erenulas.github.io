@@ -11,7 +11,7 @@
 title: Eren Ulaş
 email: eren.ulas@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Eren Ulaş. A software developer and a cs student at Marmara University.
+  Hi, I'm Eren Ulaş. A software developer and a computer engineering student at Marmara University.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://erenulas.github.io" # the base hostname & protocol for your site
 author: Eren Ulaş

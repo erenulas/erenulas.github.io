@@ -3,4 +3,34 @@ layout: default
 title: Portfolio
 permalink: /portfolio/
 ---
-<embed src="{{site.baseurl}}/assets/ErenUlas_cv_2018.pdf" width="800px" height="2100px" />
+<section class="projects section-around" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-10" style="margin-bottom:30px;padding:0px">
+                        <h2 class="page-heading"><span style="
+                            border: 3px solid #ffcf00;
+                            padding: 2px 5px 2px 5px;
+                            border-radius:5px;
+                        ">Portfolio</span></h2>
+                  <p style="font-size:12px;opacity:0.6">* Press on images for more info...</p>
+                </div>
+            </div>
+            <div class="row">
+            {% for row in site.data.projects %}
+            
+            <div class="offset-md-1 offset-0"></div>
+
+                {% for project in row.rows %}
+                <div class="col-md-2 col-4 project-img {{project.id}}">
+                    <a href="" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
+                        <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" alt="Logo for {{ project.title }} project" />
+                    </a>
+                    {% include project-overview.html detail=project %}
+                </div>
+                {% endfor %}
+                <div class="offset-md-1 offset-0"></div>
+            {% endfor %}
+        </div>
+
+        </div>
+    </section>

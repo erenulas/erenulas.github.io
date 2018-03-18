@@ -2,19 +2,19 @@
   - name: Python
     url: https://www.python.org/
     image: python.png
-    width: 100px
+    width: 70px
 
 
   - name: Java
     url: https://www.oracle.com/java/index.html
     image: java.png
-    width: 65px
+    width: 50px
 
 
   - name: C
     url: https://en.wikipedia.org/wiki/C_(programming_language)
     image: c.png
-    width: 120px
+    width: 90px
 
 
   - name: MongoDB
@@ -24,25 +24,19 @@
 
 
 - rows:
-  - name: JavaScript
-    url: https://www.javascript.com/
-    image: js.png
-    width: 80px
-
-
-  - name: Prolog
-    url: http://www.swi-prolog.org/
-    image: prolog.png
-    width: 130px
-
-
   - name: HTML5
     url: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
     image: html5.png
-    width: 60px
+    width: 50px
 
 
   - name: CSS3
     url: https://developer.mozilla.org/en-US/docs/Web/CSS
     image: css3.png
-    width: 60px
+    width: 50px
+
+    
+  - name: Prolog
+    url: http://www.swi-prolog.org/
+    image: prolog.png
+    width: 110px

@@ -1,81 +1,101 @@
-<header id="hdr">
-  <div class="container">
-    <div class="collapse contact-collapse" id="collapseContact">
-    <div class="row" style="align-items:center;padding-top:40px">
-          <div class="col-md-3 offset-md-3 col-4 offset-2">
-            <img class="img-fluid" src="/assets/img/contact-img.png" width="300px" alt="A picture of Eren Ulaş"/>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="row">
-                {% include contact.html %}
-            </div>
-          </div>
-      </div>
+<div class="header">
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" style="">
+                    <div class="collapse navbar-collapse" id="collapse-mobile">
+                            <ul class="navbar-nav">
+                                    <li class="nav-item" style="padding-top:10px">
+                                            <h4>
+                                              <a class="nav-link new-navbar-item" href="/" style="color:black">
+                                                HOME
+                                              </a>
+                                          </h4>
+                                            </li>
+                                    <li class="nav-item">
+                                            <h4>
+                                              <a class="nav-link new-navbar-item" href="/about" style="color:black">
+                                                ABOUT
+                                              </a>
+                                          </h4>
+                                            </li>
+                              <li class="nav-item">
+                                  <h4>
+                                <a class="nav-link new-navbar-item" href="/portfolio" style="color:black">
+                                  PORTFOLIO
+                                </a>
+                            </h4>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link new-navbar-item" style="color:black">
+                                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contact-modal" style="border:0px;padding:0px;color:black;text-decoration:none"><h4>CONTACT</h4></button>
+                                    </a>  
+                                  </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+            <nav class="navbar navbar-light" style="float:right">
+                <button class="navbar-toggler mobile-button" type="button" data-toggle="collapse" data-target="#collapse-mobile" aria-controls="collapse-mobile" aria-expanded="false" aria-label="Toggle navigation" style="border:0px">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="navbar-toggler web-button" type="button" data-toggle="collapse" data-target="#collapse-web" aria-controls="collapse-web" aria-expanded="false" aria-label="Toggle navigation" style="border:0px">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            </nav>
+        </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="navbar-expand-sm navbar-default nav-max-575" style="width:100%">
-
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: calc(50% - 50px);">
-              <img class="img-fluid" src="/assets/img/mobile-header.png" width="80px" height="auto" alt="Header logo for my mobile site"/>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto" style="align-items: center">
-                
-                <li class="nav-item ">
-                  <a class="nav-link new-navbar-item disabled" href="/about">
-                    ABOUT
-                  </a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link new-navbar-item" href="#projects">
-                    PORTFOLIO
-                  </a>
-                </li>
-                  
-                <li class="nav-item vcenter nav-img-collapse">
-                  <a class="nav-link disabled" href="{{site.baseurl}}">
-                    <img class="img-fluid" src="/assets/img/web-header.png" width="80px" height="80px" alt="Header logo for my website"/>
-                  </a>
-                </li>
-              
-                <li class="nav-item">
-                  <a class="nav-link new-navbar-item disabled" href="">
-                    BLOG
-                  </a>
-                </li>
-                
-                <li class="contact-link nav-item">
-                  <a data-toggle="collapse" class="nav-link new-navbar-item" href="#collapseContact" aria-expanded="false" aria-controls="collapseContact" onclick="openContact();">
-                    CONTACT
-                  </a>
-                  <script>
-                    function openContact() {
-                      //code
-                      var x = document.getElementById("hdr");
-                      if(x.style.position == "fixed")
-                        x.style.position = "absolute"
-                      else
-                        x.style.position = "fixed"
-                      
-                      if(x.style.backgroundColor != "white")
-                        x.style.backgroundColor = "white";
-                      else
-                        setTimeout(updateHeader, 600)
-                    }
-                    function updateHeader() {
-                      var x = document.getElementById("hdr");
-                      x.style.backgroundColor = "transparent"
-                    }
-                  </script>
-                </li>
-                <li class="contact-info nav-item">
-                    {% include contact.html %}
-                </li>
-              </ul>
-            </div>
-          </div>
-    </div>
-  </div>
 </header>
+<section class="me">
+        <div class="container" style="border-bottom:3px solid #232020">
+            <div class="row" >
+                <div class="col-lg-8 col-md-8 col-12" style="padding-bottom:20px">
+                    <img class="img-fluid" src="/assets/img/mobile-header.png" width="80px" height="auto" alt="Header logo for my mobile site" style="margin-bottom:7px"/>
+                    <h3>EREN ULAŞ</h3>
+                    <h5>Software Developer | Computer Engineering Student</h5>
+                    <div class="row">
+                        <div class="col-md-12 col-10">
+                            {% include icon-github.html username=site.github_username %}
+                            {% include icon-linkedin.html username=site.linkedin_username %}
+                            {% include button-resume.html %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4" style="text-align:right;">
+                                <div class="collapse navbar-collapse" id="collapse-web">
+                                        <ul class="navbar-nav">
+                                                <li class="nav-item" style="margin-right:30px">
+                                                        <h4>
+                                                          <a class="nav-link new-navbar-item" href="/" style="color:black">
+                                                            HOME
+                                                          </a>
+                                                      </h4>
+                                                        </li>
+                                                <li class="nav-item" style="margin-right:30px">
+                                                        <h4>
+                                                          <a class="nav-link new-navbar-item" href="/about" style="color:black">
+                                                            ABOUT
+                                                          </a>
+                                                      </h4>
+                                                        </li>
+                                          <li class="nav-item" style="margin-right:30px">
+                                              <h4>
+                                            <a class="nav-link new-navbar-item" href="/portfolio" style="color:black">
+                                              PORTFOLIO
+                                            </a>
+                                        </h4>
+                                          </li>
+                                          <li class="nav-item" style="margin-right:30px">
+                                            <a class="nav-link new-navbar-item" style="color:black">
+                                                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contact-modal" style="border:0px;padding:0px;color:black;text-decoration:none"><h4>CONTACT</h4></button>
+                                            </a>                                                
+                                          </li>
+                                        </ul>
+                                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% include contact-modal.html %}

@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body>
-
+    <div class="wrap" id="wrap">
     {% include header.html %}
 
     <div class="page-content">
@@ -12,9 +12,8 @@
         {{ content }}
       </div>
     </div>
-
+    </div>
     {% include footer.html %}
-    
     {% if jekyll.environment == 'production' %}
     {% endif %}
   </body>

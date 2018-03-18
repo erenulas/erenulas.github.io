@@ -1,100 +1,34 @@
 ---
 layout: default
+title: Home
 ---
-<div>
-  <section class="info">
-    <div class="container">
-      <div class="row" style="margin-bottom:25px;">
-        <div class="col-md-8 offset-md-2 text-center">
-          <img class="img-fluid profile-img" src="/assets/img/profile-img.png" alt="A picture of Eren Ulaş"/>
+<section class="posts">
+<div class="container">
+    <div class="row" style="margin-top:3rem">
+        <div class="col-md-10 offset-md-1">
+                <h2 class="page-heading" style="margin-bottom:30px;"><span style="
+                    border: 3px solid #ffcf00;
+                    padding: 2px 5px 2px 5px;
+                    border-radius:5px;
+                ">Posts</span></h2>
+
+                <div class="post-list">
+                  {% for post in site.posts %}
+                    <div style="border-bottom: 1px solid black;">
+              
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="color:black"><h3>{{ post.title }}</h3></a>
+                        {% if post.content.size > 500 %}
+                        {{ post.content | truncatewords: 100 }} <!-- bad! content gives you rendered html and you will truncate in the middle of a node -->
+                        <a href="{{ post.url }}">read more</a>
+                     {% else %}
+                        {{ post.content }}
+                     {% endif %}
+                     <br>
+                     <span class="post-meta"><b>Posted on:</b> {{ post.date | date: "%b %-d, %Y" }}</span>
+                    </div>
+                  {% endfor %}
+                </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center" style="color:#040404">
-          <h1 style="font-weight: 700">
-            Hey, I'm Eren.
-          </h1>
-          <h4>
-            Developer | CS Student
-          </h4>
-        </div>
-      </div>
-      <div class="row" style="margin-top:25px;">
-        <div class="col-md-8 offset-md-2 text-center">
-          {% include icon-github.html username=site.github_username %}
-          {% include icon-linkedin.html username=site.linkedin_username %}
-          {% include button-resume.html %}
-        </div>
-      </div>
     </div>
-  </section>
-  <section class="companies section-around">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <h2>Companies that I have interned with</h2>
-        </div>
-      </div>
-      {% for row in site.data.companies %}
-      <div class="row" style="align-items:center;">
-        {% for company in row.rows %}
-        <div class="col-md-4 col-xs-3 text-center logo-575">
-            <a href="{{ company.url }}" target="_blank">
-              <img class="img-fluid" src="/assets/img/companies/{{ company.image }}" width="{{ company.width }}" alt="Logo of {{ company.name }}"/>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-  <section class="section-separator" >
-    <div class="container section-break"></div>
-  </section>
-  <section class="techs section-around">
-      <div class="container">
-        <div class="row" >
-            <div class="col-md-8 offset-md-2 text-center">
-              <h2>Technologies that I love to use</h2>
-            </div>
-        </div>
-        {% for row in site.data.techs %}
-        <div class="row text-center techs-row-around" style="align-items:center;">
-          <div class="offset-md-2"></div>
-          {% for tech in row.rows %}
-          <div class="col-md-2 col-6 logo-575">
-          <a href="{{ tech.url }}" target="_blank">
-            <img class="img-fluid" src="/assets/img/techs/{{ tech.image }}" width="{{ tech.width }}" alt="Logo of {{ tech.name }}"/>
-          </a>
-        </div>
-          {% endfor %}
-        </div>
-        {% endfor %}
-      </div>
-    </section>
-    <section class="section-separator" >
-      <div class="container section-break"></div>
-    </section>
-    <section class="projects section-around" id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2 text-center" style="margin-bottom:30px">
-            <h2>Some of my projects</h2>
-            <p style="font-size:12px;opacity:0.6">* Press on images for more info...</p>
-          </div>
-        </div>
-        {% for row in site.data.projects %}
-        <div class="row">
-          {% for project in row.rows %}
-          <div class="col-md-3 col-6 project-img">
-            <a href="" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
-              <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" alt="Logo for {{ project.title }} project"/>
-            </a>
-            {% include project-overview.html detail=project %}
-          </div>
-          {% endfor %}
-        </div>
-        {% endfor %}
-      </div>
-    </section>
 </div>
+</section>

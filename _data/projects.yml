@@ -44,7 +44,19 @@
     parts:
       - name: OrtakBul
         github-url: https://github.com/berkkarabacak/OrtakBul
-    description: 
+    description:
+
+
+  - title: Paddlify
+    id: paddlify
+    image: paddlify.png
+    technologies: Java
+    supervisor: Asst. Prof. Peter Schüller
+    supervisor-url: http://www.peterschueller.com/
+    parts:
+      - name: Paddlify
+        github-url: https://github.com/erenulas/Paddlify
+    description:
 
 
 - rows:
@@ -98,4 +110,17 @@
         github-url: https://github.com/erenulas/ProcessorLogisimDesign
       - name: Verilog Design
         github-url: https://github.com/erenulas/ProcessorVerilogDesign
+    description:
+
+  - title: Car Parts Store
+    id: car-parts-store
+    image: car_parts_store.png
+    technologies: Java, JSP, MSSQL, HTML, CSS
+    supervisor: 
+    supervisor-url: 
+    parts:
+      - name: Web Interface
+        github-url: https://github.com/erenulas/CarPartsStoreWebInterface
+      - name: Database
+        github-url: https://github.com/erenulas/CarPartsStoreDatabase 
     description:

@@ -1,0 +1,148 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+<section class="about" style="margin-top:60px">
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-12 overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 style="margin-bottom:30px;"><span style="
+                            border: 3px solid #ffcf00;
+                            padding: 2px 5px 2px 5px;
+                            border-radius:5px;
+                        ">Hello!</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p> I was born in Istanbul on 1994 and I live here since then. Before Marmara University, I was a student at Borsa Istanbul Zeytinburnu Anatolian High School.</br>
+                            Currently I'm a senior computer engineering student at Marmara University and I will be graduting on June 2018. </br>
+                            During the fall semester of 2015-2016, I studied at Warsaw University of Technology as an Erasmus Exchange Student. </br></br>
+                            In the summer of 2016, I've interned with two different companies which are Date My Wardobe and Ziraat Teknoloji.</br>
+                            Date My Wardrobe is a Boston based startup which brings sharing economy to fashion. 
+                            I have worked closely with the CEO of Date My Wardrobe on both front and back ends during my internship, and I used mainly Java, HTML, CSS, JavaScript, and MySQL.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Ziraat Teknoloji is an Istanbul based company which gives IT support to Ziraat Bank which is Turkey's largest bank. 
+                            While I was an intern at Ziraat Teknoloji, I implemented a desktop application for determining investment preferences of customers. C# and PL/SQL were the two mostly used 
+                            technologies during this period.</br></br>
+                            In June 2017, I was an intern at Doğan TV Holding. Doğan TV Holding is an Istanbul based company which includes Kanal D, CNN Türk, D-Smart, and many others. 
+                            During my internship, I have created D-Smart Channel Frequency List page which allows its users to figure out the frequencies of some TV channels. 
+                            I've also played a significant role on the frontend implementation of sitemap page of D-Smart website. During this period, I worked on front end using Bootstrap, HTML, CSS.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12" style="margin-top:20px">
+                            <h4 style="margin-bottom:30px;"><span>Technologies I love to use</span></h4>
+                    </div>
+                </div>
+                <div class="row text-center" style="align-items: center">
+                    {% for row in site.data.techs %}
+                        {% for tech in row.rows %}
+                            <div class="col-md-2 col-2 logo-575">
+                                <a href="{{ tech.url }}" target="_blank">
+                                    <img style="margin-top:10px" class="img-fluid" src="/assets/img/techs/{{ tech.image }}" width="{{ tech.width }}" alt="Logo of {{ tech.name }}"/>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                            <h2 style="margin-bottom:30px;"><span style="
+                                border: 3px solid #ffcf00;
+                                padding: 2px 5px 2px 5px;
+                                border-radius:5px;
+                            ">Books, Music</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-12 goodreads-widget">
+                        <div class="goodreads-wide">
+      
+                            <div id="gr_custom_widget_1520989024">
+                                <div class="gr_custom_container_1520989024">
+                                    <h2 class="gr_custom_header_1520989024">
+                                        <a style="" rel="nofollow" href="https://www.goodreads.com/review/list/63719925-eren-ula?shelf=to-read&amp;utm_medium=api&amp;utm_source=custom_widget">Eren&#39;s bookshelf: Want to Read</a>
+                                    </h2>
+                                    <div class="gr_custom_each_container_1520989024">
+                                        <div class="gr_custom_book_container_1520989024">
+                                            <a title="Code" rel="nofollow" href="https://www.goodreads.com/review/show/2069824583?utm_medium=api&amp;utm_source=custom_widget"><img alt="Code" border="0" src="https://images.gr-assets.com/books/1328830222m/44882.jpg" /></a>
+                                        </div>
+                                        <div class="gr_custom_rating_1520989024">
+                                            <span class=" staticStars"><img src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /></span>
+                                        </div>
+                                        <div class="gr_custom_title_1520989024">
+                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/2069824583?utm_medium=api&amp;utm_source=custom_widget">Code</a>
+                                        </div>
+                                        <div class="gr_custom_author_1520989024">
+                                            by <a rel="nofollow" href="https://www.goodreads.com/author/show/25169.Charles_Petzold">Charles Petzold</a>
+                                        </div>
+                                        <div class="gr_custom_tags_1520989024">
+                                        tagged:
+                                        to-read
+                                        </div>
+                                    </div>
+                                    <br style="clear: both"/>
+                                    <center>
+                                        <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://www.goodreads.com/images/widget/widget_logo.gif" /></a>
+                                    </center>
+                                    <noscript>
+                                        Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Eren, and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
+                                    </noscript>
+                                </div>
+                            </div>
+                            <script src="https://www.goodreads.com/review/custom_widget/63719925.Eren's%20bookshelf:%20Want%20to%20Read?cover_position=left&cover_size=medium&num_books=5&order=a&shelf=to-read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=1&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=2&widget_id=1520989024&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charset="utf-8"></script>
+                        </div>
+                        <div class="goodreads-thin">
+      
+                            <div id="gr_custom_widget_1521070875">
+                                <div class="gr_custom_container_1521070875">
+                                    <h2 class="gr_custom_header_1521070875">
+                                        <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/63719925-eren-ula?shelf=to-read&amp;utm_medium=api&amp;utm_source=custom_widget">Eren&#39;s bookshelf: to-read</a>
+                                    </h2>
+                                    <div class="gr_custom_each_container_1521070875">
+                                        <div class="gr_custom_book_container_1521070875">
+                                            <a title="Code" rel="nofollow" href="https://www.goodreads.com/review/show/2069824583?utm_medium=api&amp;utm_source=custom_widget"><img alt="Code" border="0" src="https://images.gr-assets.com/books/1328830222m/44882.jpg" /></a>
+                                        </div>
+                                        <div class="gr_custom_title_1521070875">
+                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/2069824583?utm_medium=api&amp;utm_source=custom_widget">Code</a>
+                                        </div>
+                                        <div class="gr_custom_author_1521070875">
+                                            by <a rel="nofollow" href="https://www.goodreads.com/author/show/25169.Charles_Petzold">Charles Petzold</a>
+                                        </div>
+                                        <div class="gr_custom_tags_1521070875">
+                                            tagged:
+                                            to-read
+                                        </div>
+                                    </div>
+                                    <br style="clear: both"/>
+                                    <center>
+                                        <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://www.goodreads.com/images/widget/widget_logo.gif" /></a>
+                                    </center>
+                                    <noscript>
+                                        Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Eren, and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
+                                    </noscript>
+                                </div>
+                            </div>
+                            <script src="https://www.goodreads.com/review/custom_widget/63719925.Eren's%20bookshelf:%20to-read?cover_position=left&cover_size=medium&num_books=5&order=a&shelf=to-read&show_author=1&show_cover=1&show_rating=0&show_review=1&show_tags=1&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1521070875&widget_text_color=000000&widget_title_size=medium&widget_width=wide" type="text/javascript" charset="utf-8"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-12 spotify-widget">
+                        <iframe src="https://open.spotify.com/embed/user/11135553220/playlist/7bMzIA6lqWQ9rhwM5sy6a4" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" style="min-width:300px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

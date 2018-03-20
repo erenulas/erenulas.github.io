@@ -165,6 +165,10 @@ body {
 
 .new-navbar-item {
     color: black;
+    &:hover {
+        text-decoration: underline;
+        color: black;
+    }
 }
 
 header {

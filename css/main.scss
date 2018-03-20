@@ -166,7 +166,7 @@ body {
 .new-navbar-item {
     color: black;
     &:hover {
-        text-decoration: underline;
+        text-decoration: underline !important;
         color: black;
     }
 }

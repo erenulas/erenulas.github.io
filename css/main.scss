@@ -120,6 +120,16 @@ body {
     margin-bottom: 20px;
 }
 
+.resume-btn {
+    border:1px solid black; 
+    color:black;
+}
+
+.footer-highlight {
+    font-weight:700;
+    color:#2B2B2B;
+}
+
 .project-btn {
     padding: 0px 0px;
     border: 0px;
@@ -141,10 +151,20 @@ body {
 }
 
 .nav-item {
-    margin-right: 40px;
+    margin-right: 30px;
     @media screen and (max-width: 767px) {
         margin-right: 0px;
     }
+}
+
+.page-title{
+    border: 3px solid #ffcf00;
+    padding: 2px 5px 2px 5px;
+    border-radius:5px;
+} 
+
+.new-navbar-item {
+    color: black;
 }
 
 header {

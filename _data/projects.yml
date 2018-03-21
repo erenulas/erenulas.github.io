@@ -8,7 +8,14 @@
     parts:
       - name: Genetic Algorithm for MWISP
         github-url: https://github.com/erenulas/genetic-algorithm-MWISP
-    description: 
+    description: In <a href="https://en.wikipedia.org/wiki/Independent_set_(graph_theory)" target="_blank">
+                 MWISP (Maximum Weighted Independent Set Problem)</a>, it is required to find the maximum independent set of vertices of
+                 a given graph such that the sum of the weights of the nodes is maximum.</br>
+                 <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target="_blank">Genetic algorithm</a>
+                 is a heuristic search algorithm inspired by the ideas of natural selection and genetics.</br>
+                 In this project, a genetic algorithm is implemented to solve the maximum weighted independent set problem. Users who are
+                 using this application can specify some parameters such as the population size, the generation limit, and the mutation and 
+                 crossover probabilities to use the genetic algorithm.
 
 
   - title: Student Assistant Bot
@@ -20,7 +27,17 @@
     parts:
       - name: Student Assistant Bot
         github-url: https://github.com/erenulas/student-assistant-bot
-    description: 
+    description: <a href="https://telegram.org/" target="_blank">Telegram</a> is an open-source, non-profit instant messaging app.</br>
+                 A <a href="https://en.wikipedia.org/wiki/Chatbot" target="_blank">chatbot</a> is a computer program that can simulate a conversation, 
+                 and Telegram supports chatbots. </br>
+                 <a href="https://t.me/student_mate_bot" target="_blank">Student Assistant Bot</a> can check the announcements made on courses’ websites. It can also track
+                 the price of a product from e-commerce websites such as 
+                 <a href="https://www.teknosa.com/" target="_blank">Teknosa</a>, 
+                 <a href="https://www.n11.com/" target="_blank">n11</a>, 
+                 <a href="https://www.hepsiburada.com/" target="_blank">GittiGidiyor</a>, 
+                 <a href="https://www.hepsiburada.com/" target="_blank">Hepsiburada</a>. 
+                 This bot is deployed on <a href="https://www.heroku.com/" target="_blank">Heroku</a> and can be found on Telegram under the 
+                 <a href="https://t.me/student_mate_bot" target="_blank">‘student_mate_bot’</a> username.
 
 
   - title: P2P Chat
@@ -32,7 +49,12 @@
     parts:
       - name: P2P Chat
         github-url: https://github.com/erenulas/p2p-chat
-    description:
+    description: In a <a href="https://en.wikipedia.org/wiki/Peer_to_peer_network" target="_blank">P2P (peer to peer)</a> network, end systems are 
+                 directly connected to each other.</br> A p2p chat application that is based on a centralized index approach is created. The centralized index
+                 server keeps track of the peers in the network and uses <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">MongoDB</a> to achieve 
+                 it. The index server also controls the timeout status of each peer, and if a peer is inactive for some time, then it will automatically be disconnected.
+                 Each user should have a unique username to start a conversation, and a user cannot start another conversation while having one with someone else.
+                 Each user has the options to accept or reject the chat requests as well.
 
 
   - title: OrtakBul
@@ -44,7 +66,12 @@
     parts:
       - name: OrtakBul
         github-url: https://github.com/berkkarabacak/OrtakBul
-    description:
+    description: Investors look for some opportunities to make an investment and originators look for some investment to make their ideas come true.
+                 Aim of OrtakBul is to bring both sides together.</br> It is a website which allows people to share their ideas, and it also lets 
+                 investors to find an idea to make an investment. Investors can send messages to the owner of an idea, and idea owners can make comments 
+                 about investors. The website has a search functionality as well, and users can filter the results according to city, budget, etc. 
+                 When a new idea is posted or a new investor joins Ortakbul, they are automatically matched according to a number of predefined preferences 
+                 such as budget, city, interests. 
 
 
   - title: Paddlify
@@ -56,7 +83,12 @@
     parts:
       - name: Paddlify
         github-url: https://github.com/erenulas/Paddlify
-    description:
+    description: Paddlify is a game that the ball moves upwards to hit one or more bricks and bounces back, and the player moves the paddle at the bottom to 
+                 prevent the ball from hitting the bottom edge. </br>Player can move the paddle 
+                 to left, right, or keep it at the same location, and this movement can be done at each second round. If the ball hits one or more bricks, then bricks 
+                 disappear, and ball bounces back. The ball also bounces back if it hits left, right, or top edges of the screen. There are two types 
+                 of bricks as X and Y. If ball hits an X brick, then only that brick disappears. However, if it hits a Y brick, then that brick and all the other 
+                 bricks around it disappears. Player loses when the ball hits the bottom edge.
 
 
 - rows:

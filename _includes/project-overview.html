@@ -28,10 +28,8 @@
                     </div>
                     <div class="row">
                         {% for part in {{include.detail.parts}} %}
-                            <a href="{{part.github-url}}" target="_blank">
-                                <button type="button" class="btn btn-link btn-sm contact" style="border:1px solid #232020;color:#232020;margin-bottom:0.8rem;margin-right:0.8rem;">
-                                    {{part.name}}
-                                </button>
+                            <a href="{{part.github-url}}" target="_blank" class="btn btn-link btn-sm contact" style="border:1px solid #232020;color:#232020;margin-bottom:0.8rem;margin-right:0.8rem;">
+                                {{part.name}}
                             </a>
                         {% endfor %}
                     </div>

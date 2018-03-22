@@ -10,9 +10,9 @@
         github-url: https://github.com/erenulas/genetic-algorithm-MWISP
     description: In <a href="https://en.wikipedia.org/wiki/Independent_set_(graph_theory)" target="_blank">
                  MWISP (Maximum Weighted Independent Set Problem)</a>, it is required to find the maximum independent set of vertices of
-                 a given graph such that the sum of the weights of the nodes is maximum.</br></br>
+                 a given graph such that the sum of the weights of the nodes is maximum.<br><br>
                  <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target="_blank">Genetic algorithm</a>
-                 is a heuristic search algorithm inspired by the ideas of natural selection and genetics.</br></br>
+                 is a heuristic search algorithm inspired by the ideas of natural selection and genetics.<br><br>
                  In this project, a genetic algorithm is implemented to solve the maximum weighted independent set problem. Users who are
                  using this application can specify some parameters such as the population size, the generation limit, and the mutation and 
                  crossover probabilities to use the genetic algorithm.
@@ -27,9 +27,9 @@
     parts:
       - name: Student Assistant Bot
         github-url: https://github.com/erenulas/student-assistant-bot
-    description: <a href="https://telegram.org/" target="_blank">Telegram</a> is an open-source, non-profit instant messaging app.</br></br>
+    description: <a href="https://telegram.org/" target="_blank">Telegram</a> is an open-source, non-profit instant messaging app.<br><br>
                  A <a href="https://en.wikipedia.org/wiki/Chatbot" target="_blank">chatbot</a> is a computer program that can simulate a conversation, 
-                 and Telegram supports chatbots. </br></br>
+                 and Telegram supports chatbots. <br><br>
                  <a href="https://t.me/student_mate_bot" target="_blank">Student Assistant Bot</a> can check the announcements made on courses’ websites. It can also track
                  the price of a product from e-commerce websites such as 
                  <a href="https://www.teknosa.com/" target="_blank">Teknosa</a>, 
@@ -50,7 +50,7 @@
       - name: P2P Chat
         github-url: https://github.com/erenulas/p2p-chat
     description: In a <a href="https://en.wikipedia.org/wiki/Peer_to_peer_network" target="_blank">P2P (peer to peer)</a> network, end systems are 
-                 directly connected to each other.</br> </br>
+                 directly connected to each other.<br> <br>
                  A p2p chat application that is based on a centralized index approach is created. The centralized index
                  server keeps track of the peers in the network and uses <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">MongoDB</a> to achieve 
                  it. The index server also controls the timeout status of each peer, and if a peer is inactive for some time, then it will automatically be disconnected.
@@ -68,7 +68,7 @@
       - name: OrtakBul
         github-url: https://github.com/berkkarabacak/OrtakBul
     description: Investors look for some opportunities to make an investment and originators look for some investment to make their ideas come true.
-                 Aim of OrtakBul is to bring both sides together.</br></br> It is a website which allows people to share their ideas, and it also lets 
+                 Aim of OrtakBul is to bring both sides together.<br><br> It is a website which allows people to share their ideas, and it also lets 
                  investors to find an idea to make an investment. Investors can send messages to the owner of an idea, and idea owners can make comments 
                  about investors. The website has a search functionality as well, and users can filter the results according to city, budget, etc. 
                  When a new idea is posted or a new investor joins Ortakbul, they are automatically matched according to a number of predefined preferences 
@@ -85,7 +85,7 @@
       - name: Paddlify
         github-url: https://github.com/erenulas/Paddlify
     description: Paddlify is a game that the ball moves upwards to hit one or more bricks and bounces back, and the player moves the paddle at the bottom to 
-                 prevent the ball from hitting the bottom edge. </br></br>Player can move the paddle 
+                 prevent the ball from hitting the bottom edge. <br><br>Player can move the paddle 
                  to left, right, or keep it at the same location, and this movement can be done at each second round. If the ball hits one or more bricks, then bricks 
                  disappear, and the ball bounces back. The ball also bounces back if it hits left, right, or top edges of the screen. There are two types 
                  of bricks as X and Y. If the ball hits an X brick, then only that brick disappears. However, if it hits a Y brick, then that brick and all the other 
@@ -104,7 +104,7 @@
         github-url: https://github.com/erenulas/coin-collecting-robot
     description: In coin collecting robot problem, several coins are placed in cells of a board. A robot is placed in the upper left corner and needs to collect as many
                  coins as it can while it is moving to the bottom right cell. At each step, the robot can move either one cell to the right or one cell down from its location.
-                 The aim is to find a path to the bottom right corner such that the robot collects the maximum number of coins while it is following that path.</br></br>
+                 The aim is to find a path to the bottom right corner such that the robot collects the maximum number of coins while it is following that path.<br><br>
                  In this project, modified version of the coin collecting robot problem is implemented with <a href="https://en.wikipedia.org/wiki/Dynamic_programming" 
                  target="_blank">dynamic programming</a> approach, and this modified version of the original problem has some additional constraints. Each cell has an integer
                  between -5 and 5. If the value of a cell is positive, then the robot gains that amount of coins when it visits that cell. If the value of a cell is negative 
@@ -122,7 +122,7 @@
       - name: BMI Calculator
         github-url: https://github.com/erenulas/BMICalculator
     description: <a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank"> BMI (body mass index) </a> is equal to the mass divided by the square of height.
-                 It indicates whether a person is underweight, overweight, obese or a healthy weight for their height.</br></br>
+                 It indicates whether a person is underweight, overweight, obese or a healthy weight for their height.<br><br>
                  An Android app to calculate a person's body mass index according to the given measurements is created.
 
 
@@ -135,9 +135,9 @@
     parts:
       - name: Family Tree
         github-url: https://github.com/erenulas/PrologFamilyTree
-    description: A family tree application to create and manage family trees is implemented. A family tree keeps track of the ancestral hierarchy of the user's family.</br></br>
+    description: A family tree application to create and manage family trees is implemented. A family tree keeps track of the ancestral hierarchy of the user's family.<br><br>
                  Users can add new members, and update the information of a member added before. A new member is added only as mother, father, or child. Users can ask the 
-                 relationship between 2 people. Relationship types (in Turkish) that can be queried are</br></br>
+                 relationship between 2 people. Relationship types (in Turkish) that can be queried are<br><br>
                   <ul>
                     <li>Anne, Baba, Oğul, Kız, Erkek Kardeş, Kız Kardeş, Abla, Abi</li>
                     <li>Amca, Hala, Dayı, Teyze</li>
@@ -163,13 +163,13 @@
         github-url: https://github.com/erenulas/ProcessorLogisimDesign
       - name: Verilog Design
         github-url: https://github.com/erenulas/ProcessorVerilogDesign
-    description: This project is done in 3 steps which are the implementation of the assembler, designing processor using Logisim, and designing processor using Verilog.</br></br>
+    description: This project is done in 3 steps which are the implementation of the assembler, designing processor using Logisim, and designing processor using Verilog.<br><br>
                  During the first step, <a href="https://en.wikipedia.org/wiki/Instruction_set_architecture" target="_blank">instruction set architecture (ISA)</a> is determined, 
                  and a control unit is designed. After that, an assembler to convert the code written
                  in the assembly language (which is compatible with the decided instruction set architecture) to binary codes is implemented using Python. ISA includes AND, OR,
-                 ADD, LD, ST, ANDI, ORI, ADDI, JUMP, PUSH, POP operations.</br></br>
+                 ADD, LD, ST, ANDI, ORI, ADDI, JUMP, PUSH, POP operations.<br><br>
                  In the second step, the processor is designed on <a href="https://en.wikipedia.org/wiki/Logisim" target="_blank">Logisim</a>. The design is compatible with the ISA determined in the first step, and it also supports all of the
-                 operations included in ISA.</br></br>
+                 operations included in ISA.<br><br>
                  During the third step, processor is designed using <a href="https://en.wikipedia.org/wiki/Verilog" target="_blank">Verilog</a>. The design is compatible with the ISA determined in the first step, and it also supports all of the
                  operations included in ISA, as well.
 
@@ -187,6 +187,6 @@
         github-url: https://github.com/erenulas/CarPartsStoreDatabase
       - name: Analysis and ER Diagram
         github-url: https://github.com/erenulas/CarPartsStoreDatabase/wiki 
-    description: The Aim of this project is to create a website which will allow its users to order some car parts.</br></br>
+    description: The Aim of this project is to create a website which will allow its users to order some car parts.<br><br>
                  Before the implementation, data and requirement analysis is done, and ER diagram for the database is created. After the database is developed and populated
                  with some data, stored procedures, views, and a trigger are created as well. Finally, a web interface with a very limited functionality is implemented.

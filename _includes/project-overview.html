@@ -10,9 +10,11 @@
                         <h5 class="modal-title" id="exampleModalLongTitle">
                             {{include.detail.title}}
                         </h5>
+                        {% if include.detail.supervisor != "None" %}
                         <h6>
                             Supervisor - <a href="{{include.detail.supervisor-url}}" target="_blank">{{include.detail.supervisor}}</a>
                         </h6>
+                        {% endif %}
                         <h6>
                             <i>
                                 {{include.detail.technologies}}

@@ -1,4 +1,4 @@
-<div class="modal fade" id="{{include.detail.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="{{include.detail.id}}" tabindex="-1" role="dialog" aria-labelledby="{{ include.detail.id }}-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content project-modal-content">
             <div class="modal-header project-modal-header">
@@ -7,7 +7,7 @@
                         <img style="border-radius:0.3rem" class="img-fluid" src="/assets/img/portfolio/{{include.detail.image}}" alt="Logo for {{ include.detail.title }} project"/>
                     </div>
                     <div class="col-md-8 col-8">
-                        <h5 class="modal-title" id="exampleModalLongTitle">{{include.detail.title}}</h5>
+                        <h5 class="modal-title" id="{{ include.detail.id }}-title">{{include.detail.title}}</h5>
                         {% if include.detail.supervisor != "None" %}
                             <h6>Supervisor - <a href="{{include.detail.supervisor-url}}" target="_blank">{{include.detail.supervisor}}</a></h6>
                         {% endif %}

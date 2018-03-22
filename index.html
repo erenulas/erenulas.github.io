@@ -14,14 +14,18 @@ title: Home
                     <div style="border-bottom: 1px solid black;">
               
                         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="color:black"><h3>{{ post.title }}</h3></a>
-                        {% if post.content.size > 500 %}
+                    {% if post.content.size > 500 %}
                         {{ post.content | truncatewords: 100 }} <!-- bad! content gives you rendered html and you will truncate in the middle of a node -->
                         <a href="{{ post.url }}">read more</a>
                      {% else %}
                         {{ post.content }}
                      {% endif %}
                      <br>
+                     <div>
                      <span class="post-meta"><b>Posted on:</b> {{ post.date | date: "%b %-d, %Y" }}</span>
+                     <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+                     </div>
                     </div>
                   {% endfor %}
                 </div>

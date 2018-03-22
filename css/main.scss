@@ -276,5 +276,13 @@ a.footer-highlight {
     }
 }
 
+#twitter-widget-0 {
+    vertical-align: bottom;
+}
+
+.pocket-btn {
+    float:right;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'bootstrap/bootstrap';

@@ -232,7 +232,7 @@ header {
 
 .me {
     @media screen and (max-width:767px){
-        padding-top: 7rem;
+        padding-top: 5.5rem;
     }
 }
 
@@ -283,6 +283,103 @@ a.footer-highlight {
 .pocket-btn {
     float:right;
 }
+
+.site-stack {
+    @media screen and (max-width:767px){
+        margin-top: 15px;
+    }
+}
+
+%about-span {
+    font-weight: 700;
+}
+
+.about-istanbul {
+    @extend %about-span;
+    color: turquoise;
+}
+
+.about-birth {
+    @extend %about-span;
+    color: #561D25;
+}
+
+.about-dept {
+    @extend %about-span;
+    color: purple;
+}
+
+.about-university {
+    @extend %about-span;
+    color: #3C7A89;
+}
+
+.about-grad {
+    @extend %about-span;
+    color: #A4243B;
+}
+
+.about-warsaw {
+    @extend %about-span;
+    color: #D8973C;
+}
+
+.about-erasmus {
+    @extend %about-span;
+    color: #DB2763;
+}
+
+.about-idate {
+    @extend %about-span;
+    color: #E55934;
+}
+
+.about-dmw {
+    @extend %about-span;
+    color: #027BCE;
+}
+
+.about-ziraat {
+    @extend %about-span;
+    color: #BA1B1D;
+}
+
+.about-startup {
+    @extend %about-span;
+    color: #7F534B;
+}
+
+.about-dmw-stack {
+    @extend %about-span;
+    color: #104547;
+}
+
+.about-desc-ziraat {
+    @extend %about-span;
+    color: #447604;
+}
+
+.about-ziraat-stack {
+    @extend %about-span;
+    color: #764248;
+}
+
+.about-dtvh {
+    @extend %about-span;
+    color: black;
+}
+
+.about-desc-dtvh {
+    @extend %about-span;
+    color: #81B29A;
+}
+
+.about-dtvh-stack {
+    @extend %about-span;
+    color: #3581B8;
+}
+
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'bootstrap/bootstrap';

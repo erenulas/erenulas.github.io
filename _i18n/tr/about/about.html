@@ -1,0 +1,105 @@
+
+<section class="about" style="margin-top:60px">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-12 overview">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 style="margin-bottom:30px;">
+                                <span class="page-title">Merhaba!</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p> <span class="about-span about-birth">1994</span> yılında <span class="about-span about-istanbul">İstanbul</span>'da doğdum ve o zamandan beri burada yaşıyorum. Marmara Universitesi'nde ki eğitimimden önce lise hayatımı Borsa İstanbul Zeytinburnu Anadolu Lisesi'nde geçirdim.
+                                Şu anda <span class="about-span about-university">Marmara Üniversitesi</span>'nde <span class="about-span about-dept">son sınıf bilgisayar mühendisliği öğrencisiyim</span> ve <spanclass="about-span about-grad">2018 yılı haziran ayı</span>nda mezun olacağım.
+                                2015-2016 eğitim-öğretim yılının güz döneminde <span class="about-span about-warsaw">Varşova Teknoloji Üniversitesi</span>'nde <span class="about-span about-erasmus">Erasmus Değişim Öğrencisi</span> olarak eğitim aldım. <br><br>
+                                <span class="about-span about-idate">2016 yılının yazı</span> süresince <span class="about-span about-dmw">Date My Wardrobe</span> ve <span class="about-span about-ziraat">Ziraat Teknoloji</span>'de yazılım geliştirme stajyeri olarak çalıştım. <br>
+                                <span class="about-span about-dmw">Date My Wardrobe</span> <span class="about-span about-startup">Boston merkezli</span>, paylaşım ekonomisini modaya getirmeyi amaçlayan bir startup idi.
+                                Stajım süresince Date My Wardrobe CEO'su ile birlikte ön ve arka yüz geliştirmelerin de çalıştık ve stajım süresince <span class="about-span about-dmw-stack">Java, HTML, CSS, JavaScript ve MYSQL</span> teknolojilerini kullandım.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <span class="about-span about-ziraat">Ziraat Teknoloji</span> ise İstanbul merkezli, <span class="about-span about-desc-ziraat">Türkiye'nin en büyük bankası</span> olan Ziraat Bankası'na BT alanında destek veren bir firmadır.
+                                Ziraat Teknoloji'de ki stajım süresince, müşterilerin yatırım tercihlerini belirlemekte kullanılan bir masaüstü uygulaması geliştirdim. 
+                                Bu süreç boyunca, <span class="about-span about-ziraat-stack">C# ve PL/SQL</span> en çok kullandığım teknolojilerdi.<br><br>
+                                <span class="about-span about-idate">2017 yılının haziran ayında</span> <span class="about-span about-dtvh">Doğan TV Holding</span>'de stajyer olarak çalıştım. Doğan TV Holding İstanbul merkezli ve bünyesinde <span class="about-span about-desc-dtvh">Kanal D, CNN Türk, D-Smart</span> gibi daha bir çok medya kuruluşunu
+                                barındıran bir şirkettir. Stajım sürem içinde, kullanıcıların TV kanallarının frekanslarını öğrenebilecekleri D-Smart Kanal Frekans Listesi sayfasını oluşturdum. Aynı zamanda, 
+                                D-Smart'ın internet sitesinin site haritası sayfasının ön yüz geliştirilmesin de önemli rol oynadım. Stajım süresince <span class="about-span about-dtvh-stack">Bootstrap, HTML, CSS</span> gibi teknolojileri kullandım.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12" style="margin-top:20px">
+                                <h4 style="margin-bottom:30px;"><span class="page-title">Kullandığım teknolojiler</span></h4>
+                        </div>
+                    </div>
+                    <div class="row text-center" style="align-items: center">
+                        {% for row in site.data.techs %}
+                            {% for tech in row.rows %}
+                                <div class="col-md-2 col-2 logo-575">
+                                    <a href="{{ tech.url }}" target="_blank">
+                                        <img style="margin-top:10px" class="img-fluid" src="/assets/img/techs/{{ tech.image }}" width="{{ tech.width }}" alt="Logo of {{ tech.name }}"/>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                        <div class="row">
+                                <div class="col-lg-12 col-md-6 col-12">
+                                    <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-12">
+                                                    <h2 style="margin-bottom:30px;"><span class="page-title">Okuyacaklarım</span></h2>
+                                            </div>                        </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-12 goodreads-widget">
+                                                <div class="row" style="padding-left:15px">
+                                                    <style type="text/css" media="screen">
+                                                        .gr_grid_container {
+                                                          /* customize grid container div here. eg: width: 500px; */
+                                                        }
+                                                
+                                                        .gr_grid_book_container {
+                                                            float: left;
+                                                            width: 75px;
+                                                            height: 100px;
+                                                            padding: 0px 0px;
+                                                        }
+                                                      </style>
+                                                      <div id="gr_grid_widget_1521589542">
+                                                      </div>
+                                                      <script src="https://www.goodreads.com/review/grid_widget/63719925.Want%20to%20Read?cover_size=medium&hide_link=true&hide_title=true&num_books=20&order=a&shelf=to-read&sort=date_added&widget_id=1521589542" type="text/javascript" charset="utf-8"></script>
+                                                </div>
+                                                    <div class="row" style="margin-top:30px;padding-left:15px">
+                                                            <a target="_blank" href="https://www.goodreads.com/review/list/63719925?shelf=to-read" title="Eren Ulaş's book recommendations, liked quotes, book clubs, book trivia, book lists (to-read shelf)" rel="nofollow">
+                                                                <img border="0" alt="Eren Ulaş's book recommendations, liked quotes, book clubs, book trivia, book lists (to-read shelf)" src="https://www.goodreads.com/images/badge/badge1.jpg"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6 col-12 spotify-widget">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-12">
+                                                    <h2 style="margin-bottom:30px;"><span class="page-title">Karışık Kaset</span></h2>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-lg-12 col-md-12 col-12">
+                                                        <iframe src="https://open.spotify.com/embed/user/11135553220/playlist/7bMzIA6lqWQ9rhwM5sy6a4" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" style="min-width:300px;width:100%;"></iframe>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    

@@ -1,0 +1,30 @@
+site:
+  name: Eren Ulaş
+  description: Hi, I'm Eren Ulaş. A software developer and a computer engineering student at Marmara University.
+  keywords: Eren, Ulaş
+
+main:
+  button-resume: 
+    btn-text: Resume
+
+  header:
+    home: HOME
+    about: ABOUT
+    portfolio: PORTFOLIO
+    contact: CONTACT
+    job: Software Developer | Computer Engineering Student
+
+  portfolio:
+    title: PORTFOLIO
+    tip: Press on images for more info
+
+contact-modal:
+  title1: Get in
+  title2: Touch
+  name: Name
+  email: Email Address
+  subject: Subject
+  message: Write your message here!
+  send: Send
+
+    

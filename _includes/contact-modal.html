@@ -3,7 +3,7 @@
     <div class="modal-content">
       <form action="https://formspree.io/eren.ulas@yahoo.com" method="POST">
         <div class="modal-header">
-          <h1 class="modal-title" id="exampleModalLongTitle"><span style="border-bottom: 3px solid red">Get in</span> Touch</h1>
+          <h1 class="modal-title" id="exampleModalLongTitle"><span style="border-bottom: 3px solid red">{% t contact-modal.title1 %}</span> {% t contact-modal.title2 %}</h1>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -14,17 +14,17 @@
               <div class="col">
                 <div class="form-row" style="margin-top: 3rem;">
                   <div class="form-group" style="width:  100%;">
-                    <input class="contact-form-input" type="text" name="name" id="fullname" placeholder="Name" style="border-color: #ffcf00;width:100%;">
+                    <input class="contact-form-input" type="text" name="name" id="fullname" placeholder="{% t contact-modal.name %}" style="border-color: #ffcf00;width:100%;">
                   </div>
                 </div>
                 <div class="form-row" style="margin-top: 2rem;">
                   <div class="form-group" style="width:100%">
-                    <input class="contact-form-input" type="email" name="email" id="email" placeholder="Email" style="border-color: #2C1051;width:100%">
+                    <input class="contact-form-input" type="email" name="email" id="email" placeholder="{% t contact-modal.email %}" style="border-color: #2C1051;width:100%">
                   </div>
                 </div>
               <div class="form-row" style="margin-top: 2rem;">
                 <div class="form-group" style="width:100%">
-                  <input class="contact-form-input" type="text" name="_subject" id="subject" placeholder="Subject" style="border-color: #0077B5;width:100%">
+                  <input class="contact-form-input" type="text" name="_subject" id="subject" placeholder="{% t contact-modal.subject %}" style="border-color: #0077B5;width:100%">
                 </div>
               </div>
             </div>
@@ -33,9 +33,9 @@
             <div class="col">
               <div class="form-row" style="margin-top: 3rem;">
                 <div class="form-group" style="width:  100%;">
-                  <textarea class="contact-form-input" rows="12" name="message" id="message" placeholder="Enter your message here!" style="width: 100%;border: 3px solid black;"></textarea>
+                  <textarea class="contact-form-input" rows="12" name="message" id="message" placeholder="{% t contact-modal.message %}" style="width: 100%;border: 3px solid black;"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;background-color: #ffcf00;color: black;border: 0px;">Send</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%;background-color: #ffcf00;color: black;border: 0px;">{% t contact-modal.send %}</button>
               </div>
             </div>
           </div>

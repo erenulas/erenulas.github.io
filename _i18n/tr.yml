@@ -1,0 +1,31 @@
+site:
+  name: Eren Ulaş
+  description: Merhaba, Ben Eren Ulaş. Marmara Üniversitesi'nde bilgisayar öğrencisi ve yazılım geliştiriciyim.
+  keywords: Eren, Ulaş
+
+
+main:
+  button-resume: 
+    btn-text: Özgeçmiş
+
+  header:
+    home: ANA SAYFA
+    about: HAKKIMDA
+    portfolio: PORTFÖY
+    contact: İLETİŞİM
+    job: Yazılım Geliştirici | Bilgisayar Mühendisliği Öğrencisi
+
+  portfolio:
+    title: PORTFÖY
+    tip: Daha fazla bilgi için resimlere dokunun
+
+contact-modal:
+  title1: İletişime
+  title2: Geç
+  name: İsim
+  email: E-posta Adresi
+  subject: Konu
+  message: Mesajını buraya yaz!
+  send: Gönder
+
+    

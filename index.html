@@ -2,30 +2,32 @@
 layout: default
 title: Home
 ---
-<section class="posts">
-<div class="container">
-    <div class="row" style="margin-top:3rem">
-        <div class="col-md-10 offset-md-1">
-                <h2 class="page-heading" style="margin-bottom:30px;">
-                    <span class="page-title">Posts</span>
-                </h2>
-                <div class="post-list">
-                  {% for post in site.posts %}
-                    <div style="border-bottom: 1px solid black;">
-              
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="color:black"><h3>{{ post.title }}</h3></a>
-                    {% if post.content.size > 500 %}
-                        {{ post.content | truncatewords: 100 }} <!-- bad! content gives you rendered html and you will truncate in the middle of a node -->
-                        <a href="{{ post.url }}">read more</a>
-                     {% else %}
-                        {{ post.content }}
-                     {% endif %}
-                     <br>
-                     <span class="post-meta"><b>Posted on:</b> {{ post.date | date: "%b %-d, %Y" }}</span>
-                    </div>
-                  {% endfor %}
+<section class="projects section-around" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-10" style="margin-bottom:30px;padding:0px">
+                        <h2 class="page-heading">
+                            <span class="page-title">{% t main.portfolio.title %}</span>
+                        </h2>
+                  <p style="font-size:12px;opacity:0.6">* {% t main.portfolio.tip %}...</p>
                 </div>
+            </div>
+            <div class="row">
+            {% for row in site.data.projects %}
+            
+            <div class="offset-md-1 offset-0"></div>
+
+                {% for project in row.rows %}
+                <div class="col-md-2 col-4 project-img {{project.id}}">
+                    <a href="" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
+                        <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" alt="Logo for {{ project[site.lang].title }} project" />
+                    </a>
+                    {% include project-overview.html detail=project %}
+                </div>
+                {% endfor %}
+                <div class="offset-md-1 offset-0"></div>
+            {% endfor %}
         </div>
-    </div>
-</div>
-</section>
+
+        </div>
+    </section>

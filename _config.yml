@@ -10,9 +10,8 @@
 # Site settings
 title: Eren Ulaş
 email: eren.ulas@yahoo.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Eren Ulaş. A software developer and a computer engineering student at Marmara University.
-baseurl: "" # the subpath of your site, e.g. /blog
+description: Hi, I'm Eren Ulaş. A software developer and a computer engineering student at Marmara University.
+baseurl: ""
 url: "http://erenulas.me" # the base hostname & protocol for your site
 author: Eren Ulaş
 github_username: erenulas
@@ -25,11 +24,15 @@ social:
     - https://www.linkedin.com/in/erenulas/
     - https://github.com/erenulas
 
+languages: ["en", "tr"]
+exclude_from_localizations: ["assets", "css"]
+
 
 plugins:
   - jekyll-seo-tag
   - "jekyll-github-metadata"
   - "jekyll-sitemap"
+  - jekyll-multiple-languages-plugin
 
 # Build settings
 markdown: kramdown

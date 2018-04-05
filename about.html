@@ -1,7 +1,96 @@
 ---
 layout: default
 title: About
-permalink: /about/
+languages:
+- en
+- tr
 ---
+<section class="about" style="margin-top:60px">
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-12 overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 style="margin-bottom:30px;">
+                            <span class="page-title">{% t 'about.title1' %}</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                            {% t 'about.p1' %}
+                    </div>
+                    <div class="col-md-6">
+                            {% t 'about.p2' %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12" style="margin-top:20px">
+                            <h4 style="margin-bottom:30px;"><span class="page-title">{% t 'about.title2' %}</span></h4>
+                    </div>
+                </div>
+                <div class="row text-center" style="align-items: center">
+                    {% for row in site.data.techs %}
+                        {% for tech in row.rows %}
+                            <div class="col-md-2 col-2 logo-575">
+                                <a href="{{ tech.url }}" target="_blank">
+                                    <img style="margin-top:10px" class="img-fluid" src="/assets/img/techs/{{ tech.image }}" width="{{ tech.width }}" alt="Logo of {{ tech.name }}"/>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                        <h2 style="margin-bottom:30px;"><span class="page-title">{% t 'about.title3' %}</span></h2>
+                                </div>                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-12 goodreads-widget">
+                                    <div class="row" style="padding-left:15px">
+                                        <style type="text/css" media="screen">
+                                            .gr_grid_container {
+                                              /* customize grid container div here. eg: width: 500px; */
+                                            }
+                                    
+                                            .gr_grid_book_container {
+                                                float: left;
+                                                width: 75px;
+                                                height: 100px;
+                                                padding: 0px 0px;
+                                            }
+                                          </style>
+                                          <div id="gr_grid_widget_1521589542">
+                                          </div>
+                                          <script src="https://www.goodreads.com/review/grid_widget/63719925.Want%20to%20Read?cover_size=medium&hide_link=true&hide_title=true&num_books=20&order=a&shelf=to-read&sort=date_added&widget_id=1521589542" type="text/javascript" charset="utf-8"></script>
+                                    </div>
+                                        <div class="row" style="margin-top:30px;padding-left:15px">
+                                                <a target="_blank" href="https://www.goodreads.com/review/list/63719925?shelf=to-read" title="Eren Ulaş's book recommendations, liked quotes, book clubs, book trivia, book lists (to-read shelf)" rel="nofollow">
+                                                    <img border="0" alt="Eren Ulaş's book recommendations, liked quotes, book clubs, book trivia, book lists (to-read shelf)" src="https://www.goodreads.com/images/badge/badge1.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-12 spotify-widget">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                        <h2 style="margin-bottom:30px;"><span class="page-title">{% t 'about.title4' %}</span></h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                            <iframe src="https://open.spotify.com/embed/user/11135553220/playlist/7bMzIA6lqWQ9rhwM5sy6a4" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" style="min-width:300px;width:100%;"></iframe>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-{% translate_file about/about.html %}

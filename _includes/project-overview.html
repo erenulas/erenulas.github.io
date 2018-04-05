@@ -4,10 +4,10 @@
             <div class="modal-header project-modal-header">
                 <div class="row">
                     <div class="col-md-3 col-4">
-                        <img style="border-radius:0.3rem" class="img-fluid" src="/assets/img/portfolio/{{include.detail.image}}" alt="Logo for {{ include.detail[site.lang].title }} project"/>
+                        <img style="border-radius:0.3rem" class="img-fluid" src="/assets/img/portfolio/{{include.detail.image}}" alt="Logo for {{ include.detail[page.language].title }} project"/>
                     </div>
                     <div class="col-md-8 col-8">
-                        <h5 class="modal-title" id="{{ include.detail.id }}-title">{{include.detail[site.lang].title}}</h5>
+                        <h5 class="modal-title" id="{{ include.detail.id }}-title">{{include.detail[page.language].title}}</h5>
                         {% if include.detail.supervisor != "None" %}
                             <h6>Supervisor - <a href="{{include.detail.supervisor-url}}" target="_blank">{{include.detail.supervisor}}</a></h6>
                         {% endif %}
@@ -19,7 +19,7 @@
                 </button>
             </div>
             <div class="modal-body">
-              {{include.detail[site.lang].description}}
+              {{include.detail[page.language].description}}
             </div>
             <div class="modal-footer" style="border:0px;background-color:#ffcf00;color:#232020">
                 <div class="container">
@@ -27,7 +27,7 @@
                         <h5>GitHub Links</h5>
                     </div>
                     <div class="row">
-                        {% for part in {{include.detail[site.lang].parts}} %}
+                        {% for part in {{include.detail[page.language].parts}} %}
                             <a href="{{part.github-url}}" target="_blank" class="btn btn-link btn-sm contact" style="border:1px solid #232020;color:#232020;margin-bottom:0.8rem;margin-right:0.8rem;">
                                 {{part.name}}
                             </a>

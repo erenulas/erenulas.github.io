@@ -24,15 +24,16 @@ social:
     - https://www.linkedin.com/in/erenulas/
     - https://github.com/erenulas
 
-languages: ["en", "tr"]
-exclude_from_localizations: ["assets", "css"]
-
+language_data: data.lang.%%
+language_includes_dir: _i18n
+languages: ['en', 'tr']
 
 plugins:
   - jekyll-seo-tag
   - "jekyll-github-metadata"
   - "jekyll-sitemap"
-  - jekyll-multiple-languages-plugin
+  - jekyll-language-plugin
+  - jekyll-redirect-from
 
 # Build settings
 markdown: kramdown

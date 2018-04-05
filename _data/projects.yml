@@ -17,17 +17,6 @@
                       In this project, a genetic algorithm was implemented to solve the maximum weighted independent set problem. Users who are
                       using this application can specify some parameters such as the population size, the generation limit, and the mutation and 
                       crossover probabilities to use the genetic algorithm.
-    tr:
-      title: MWISP için Genetik Algoritma
-      parts:
-        - name: MWISP için Genetik Algoritma
-          github-url: https://github.com/erenulas/genetic-algorithm-MWISP
-      description: <a href="https://en.wikipedia.org/wiki/Independent_set_(graph_theory)" target="_blank">MWISP (Maximum Weighted Independent Set Problem)</a> düğümlerin ağırlıkları toplamı 
-                   en fazla olacak şekilde, bir grafta ki en fazla sayıda bağımsız düğümü içeren kümeyi bulmayı amaçlayan problemdir.<br><br>
-                   <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target="_blank">Genetik algoritma</a> ise doğal seçilim ve genetik fikirlerine dayanan bir sezgisel arama
-                   algoritmasıdır.<br><br>
-                   Bu projede, verilen bir graf üzerinde MWISP'i çözen genetik algoritma geliştirildi. Kullanıcılar popülasyon büyüklüğü, nesil limiti, mutasyon ve 
-                   çaprazlama olasılıkları gibi parametreleri belirleyerek algoritmayı kullanabilirler.
 
 
   - id: student-assistant-bot
@@ -51,22 +40,6 @@
                   <a href="https://www.hepsiburada.com/" target="_blank">Hepsiburada</a>. 
                   This bot is deployed on <a href="https://www.heroku.com/" target="_blank">Heroku</a> and can be found on Telegram by
                   <a href="https://t.me/student_mate_bot" target="_blank">‘student_mate_bot’</a> username.
-    tr: 
-      title: Öğrenci Yardımcısı Bot
-      parts:
-        - name: Öğrenci Yardımcısı Bot
-          github-url: https://github.com/erenulas/student-assistant-bot
-      description: <a href="https://telegram.org/" target="_blank">Telegram</a> açık kaynak kodlu, kar amacı gütmeyen anlık mesajlaşma uygulamasıdır.<br><br>
-                  <a href="https://en.wikipedia.org/wiki/Chatbot" target="_blank">Chatbot</a> ise bir sohbeti simule edebilen yazılımdır ve Telegram bot hesapları desteklemektedir.<br><br>
-                  <a href="https://t.me/student_mate_bot" target="_blank">Öğrenci Yardımcısı Bot</a> derslerin internet sitelerinde yeni duyuru yapılıp yapılmadığını kontrol eder. Aynı zamanda 
-                  aşağıda listelenen e-ticaret sitelerin de satılan ürünlerin fiyatlarını takip etmeye de olanak sağlar.
-                  <a href="https://www.teknosa.com/" target="_blank">Teknosa</a>, 
-                  <a href="https://www.n11.com/" target="_blank">n11</a>, 
-                  <a href="https://www.hepsiburada.com/" target="_blank">GittiGidiyor</a>, 
-                  <a href="https://www.hepsiburada.com/" target="_blank">Hepsiburada</a>. 
-                  Bu bot <a href="https://www.heroku.com/" target="_blank">Heroku</a> üzerinde çalışmaktadır ve
-                  <a href="https://t.me/student_mate_bot" target="_blank">‘student_mate_bot’</a> kullanıcı adı ile Telegram'da bulunabilir.
-
 
 
   - id: p2p-chat
@@ -86,18 +59,6 @@
                   it. The index server also controls the timeout status of each peer, and if a peer is inactive for some time, then it will automatically be disconnected.
                   Each user should have a unique username to start a conversation, and a user cannot start another conversation while having one with someone else.
                   Each user has the options to accept or reject the chat requests as well.
-    tr:
-      title: P2P Sohbet
-      parts:
-        - name: P2P Sohbet
-          github-url: https://github.com/erenulas/p2p-chat
-      description: <a href="https://en.wikipedia.org/wiki/Peer_to_peer_network" target="_blank">P2P (uçtan uca)</a> ağda, uç sistemler
-                  direk birbirlerine bağlıdır.<br> <br>
-                  Merkezileşmiş indeks yaklaşımına dayalı p2p sohbet uygulaması geliştirildi. Merkezi indeks sunucusu ağdaki cihazların takibini yapar ve bunu gerçekleştirirken
-                  <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">MongoDB</a> kullanır. Indeks sunucusu aynı zamanda her cihazın zaman aşımı durumunu denetler ve 
-                  eğer herhangi bir cihaz bir süre boyunca aktif değilse, ağ ile olan bağlantısı otomatik olarak kesilir.
-                  Sohbet başlatabilmek için her kullanıcının özgün bir kullanıcı adı olmalıdır, ve bir kullanıcı başka bir kullanıcıyla sohbet ederken yeni bir sohbet başlatamaz.
-                  Her kullanıcının kendine gelen sohbet isteğini reddetme ve kabul etme seçenekleri vardır.
 
 
                 
@@ -117,17 +78,6 @@
                   about investors. The website has a search functionality as well, and users can filter the results according to city, budget, etc. 
                   When a new idea is posted or a new investor joins Ortakbul, they are automatically matched according to a number of predefined preferences 
                   such as budget, city, interests.
-    tr:
-      title: Ortakbul
-      parts:
-        - name: Ortakbul
-          github-url: https://github.com/berkkarabacak/OrtakBul
-      description: Yatırımcılar yatırım yapmak için fırsatlar ararlar. Fikir sahipleri ise kendi fikirlerini, projelerini hayata geçirmek için yatırım
-                   bulmaya çalışırlar. Ortakbul'un amacı iki tarafı da bir araya getirmektir.<br><br> Ortakbul insanların fikirlerini paylaşmalarına ve yatırımcıların da
-                   yatırım yapabilecekleri bir fikir bulmalarına olanak sağlar. Yatırımcılar fikir sahiplerine mesaj gönderebilirler ve fikir sahipleri yatırımcılar hakkında
-                   yorum yapabilirler. Bu site de aynı zamanda arama işlevi de vardır ve kullanıcılar sonuçları şehir, bütçe vb. kategorilere göre filtreleyebilirler.
-                   Yeni bir fikir paylaşıldığında veya yeni bir yatırımcı Ortakbul'a katıldığında, yatırımcılar ve fikirler birbirleriyle daha önceden kullanıcılar
-                   tarafından belirlenen bütçe, şehir ve ilgi alanları gibi kategorilere göre otomatik olarak eşleştirilir.
 
 
 
@@ -147,16 +97,6 @@
                   disappear, and the ball bounces back. The ball also bounces back if it hits left, right, or top edges of the screen. There are two types 
                   of bricks as X and Y. If the ball hits an X brick, then only that brick disappears. However, if it hits a Y brick, then that brick and all the other 
                   bricks around it disappears. The player loses when the ball hits the bottom edge.
-    tr:
-      title: Paddlify
-      parts:
-        - name: Paddlify
-          github-url: https://github.com/berkkarabacak/OrtakBul
-      description: Paddlify oyuncunun ekranın alt kısmında bulunan bariyeri hareket ettirerek topun alt kenara çarpmasını engellemeye çalıştığı bir oyundur. <br><br>
-                   Oyuncu her iki turda bir bariyeri sağa, sola hareket ettirebilir veya olduğu yerde tutabilir. Eğer top bir veya daha fazla tuğlaya çarparsa, bu tuğlalar
-                   yok olur ve top geri seker. Top aynı zamanda ekranın sağ, sol, alt, ve üst kenarlarına çarptığında da geri seker. Oyunda X ve Y tipleri olmak üzere 
-                   iki tip tuğla vardır. Eğer top X tuğlasına çarparsa, sadece çarptığı tuğla yok olur. Ancak, eğer top Y tuğlasına çarparsa, o zaman çarptığı tuğla ve
-                   onu çevreleyen tuğlalar yok olur. Top alt kenara çarptığında oyuncu kaybeder.
 
 
 - rows:
@@ -178,18 +118,7 @@
                   between -5 and 5. If the value of a cell is positive, then the robot gains that amount of coins when it visits that cell. If the value of a cell is negative 
                   and the robot has enough coins, then it can pay that amount and visit the cell. Otherwise, robot cannot move to that cell. Cells that are marked with an 
                   'X' are unreachable.
-    tr:
-      title: Para Toplayan Robot
-      parts:
-        - name: Para Toplayan Robot
-          github-url: https://github.com/erenulas/coin-collecting-robot
-      description: Para toplayan robot probleminde,  bir oyun tahtasının hücrelerine  birkaç madeni para konulur ve robot tahtanın sol üst köşesinde ki hücreye yerleştirilir.
-                   Robot tahtanın sağ alt köşedesin ki kücreye giderken toplayabildiği kadar para toplamalıdır. Her turda, robot sadece sağındaki veya altındaki hücreye hareket
-                   edebilir. Problemin amacı, tahtanın sağ alt köşesine giden ve robotun en fazla miktarda parayı toplayabileceği yolu bulmaktır.<br><br>
-                   Bu projede, para toplayan robot probleminin değiştirilmiş bir versiyonu dinamik programlama yaklaşımıyla geliştirilmiştir. Problemin bu değiştirilmiş versiyonunda orjinal
-                   probleme ek olarak birkaç kısıtlama daha vardır. Her hücrenin -5 ve 5 arasında değişen miktarda para değeri vardır. Eğer gidilen hücrenin değeri pozitif ise,
-                   robot hücrenin değeri kadar olan miktarda parayı kazanır. Eğer hücrenin değeri negatifse ve robot bu negatif miktarı karşılayacak kadar paraya sahipse, o zaman
-                   robot bu miktarı ödeyerek hücreye geçebilir. Aksi takdirde, robot o hücreye gidemez. Ayrıca, 'X' ile işaretlenmiş olan hücreler ulaşılamaz hücrelerdir.
+
 
 
   - id: bmi
@@ -205,14 +134,6 @@
       description: <a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank"> BMI (body mass index) </a> is equal to the mass divided by the square of height.
                   It indicates whether a person is underweight, overweight, obese or a healthy weight for their height.<br><br>
                   An Android application to calculate a person's body mass index according to the given measurements was developed.
-    tr:
-      title: BMI Hesaplayıcı
-      parts:
-        - name: BMI Hesaplayıcı
-          github-url: https://github.com/erenulas/coin-collecting-robot
-      description: <a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank"> BMI (vücut kitle indeksi) </a> vücut ağırlığının boy uzunluğunun karesine bölünmesiyle hesaplanır ve
-                   bir kişinin fazla kilolu, az kilolu, obez veya ideal kiloda olup olmadığı gösterir.<br><br>
-                   Bir kişinin verilen vücut ölçülerine göre vücut kitle indeksini hesaplayan Android uygulaması geliştirildi.
 
 
 
@@ -238,23 +159,6 @@
                       <li>Bacanak, Baldız, Elti, Kayınbirader</li>
                     </ul>
                     <span style="font-size:9px">* Another version of this application with the same functionality is implemented in Python as well.</span>
-    tr:
-      title: Soy Ağacı
-      parts:
-        - name: Soy Ağacı
-          github-url: https://github.com/erenulas/PrologFamilyTree
-      description: Soy ağacları oluşturmak ve yönetmek için bir soy ağacı uygulaması geliştirildi. Soy ağacı, kullanıcının atalarının hiyerarşisini takip edebilmesini sağlar.
-                   <br><br> Kullanıcılar yeni üyeler ekleyebilirler ve daha önceden eklenmiş bir üyenin bilgilerini güncelleyebilirler. Yeni bir üye sadece anne, bana veya çocuk olarak eklenebilir.
-                   Kullanıcılar 2 kişi arasındaki ilişkiyi sorgulayabilirler. Sorgulanabilen ilişkiler <br><br>
-                    <ul>
-                      <li>Anne, Baba, Oğul, Kız, Erkek Kardeş, Kız Kardeş, Abla, Abi</li>
-                      <li>Amca, Hala, Dayı, Teyze</li>
-                      <li>Yeğen, Kuzen</li>
-                      <li>Enişte, Yenge</li>
-                      <li>Kayınvalide, Kayınpeder, Gelin, Damat</li>
-                      <li>Bacanak, Baldız, Elti, Kayınbirader</li>
-                    </ul>
-                    <span style="font-size:9px">* Bu uygulamanın aynı işlevlere sahip, Python ile geliştirilmiş farklı bir versiyonu da bulunmaktadır.</span>
 
 
 
@@ -279,21 +183,6 @@
                   ADD, LD, ST, ANDI, ORI, ADDI, JUMP, PUSH, POP operations.<br><br>
                   In the second step, the processor was designed on <a href="https://en.wikipedia.org/wiki/Logisim" target="_blank">Logisim</a>. The design is compatible with the ISA determined in the first step.<br><br>
                   During the third step, processor was designed using <a href="https://en.wikipedia.org/wiki/Verilog" target="_blank">Verilog</a>. The design is compatible with the ISA determined in the first step.
-    tr:
-      title: İşlemci Tasarımı
-      parts:
-        - name: Assembler
-          github-url: https://github.com/erenulas/Assembler
-        - name: Logisim Tasarımı
-          github-url: https://github.com/erenulas/ProcessorLogisimDesign
-        - name: Verilog Tasarımı
-          github-url: https://github.com/erenulas/ProcessorVerilogDesign
-      description: Bu proje assembler geliştirilmesi, logisim ile işlemci tasarımı ve verilog ile işlemci tasarımı aşamaları sonucunda tamamlanmıştır. <br><br> 
-                   İlk aşama da <a href="https://en.wikipedia.org/wiki/Instruction_set_architecture" target="_blank">komut seti mimarisi (ISA)</a> belirlendi ve kontrol ünitesi tasarlandı. 
-                   Daha sonra, assembly dilinde yazılmış olan kodu binary koda çevirecek assembler Python ile
-                   geliştirildi. ISA; AND, OR, ADD, LD, ST, ANDI, ORI, ADDI, JUMP, PUSH ve POP işlemlerini kapsamaktadır.<br><br>
-                   İkinci aşama da, işlemci <a href="https://en.wikipedia.org/wiki/Logisim" target="_blank">Logisim</a> kullanılarak ve ilk aşama da belirlenen ISA ile uyumlu olacak şekilde tasarlandı.<br><br>
-                   Üçüncü aşama da, işlemci <a href="https://en.wikipedia.org/wiki/Verilog" target="_blank">Verilog</a> kullanılarak ve ilk aşama da belirlenen ISA ile uyumlu olacak şekilde tasarlandı.
 
 
 
@@ -315,15 +204,3 @@
       description: The aim of this project was to create a website which will allow its users to order some car parts.<br><br>
                   Before the implementation, data and requirement analysis was done, and ER diagram for the database was created. After the development of the database, it was populated with some data and
                   stored procedures, views, and a trigger were created as well. Finally, a web interface with a very limited functionality was implemented.
-    tr:
-      title: Araba Parçaları Mağazası
-      parts:
-        - name: Web Arayüzü
-          github-url: https://github.com/erenulas/CarPartsStoreWebInterface
-        - name: Veritabanı
-          github-url: https://github.com/erenulas/CarPartsStoreDatabase
-        - name: Analiz ve ER Diyagramı
-          github-url: https://github.com/erenulas/CarPartsStoreDatabase/wiki 
-      description: Bu proje kapsamında kullanıcılarına araba parçalarını sipariş verme imkanı sunan bir internet sitesi geliştirildi. Internet sitesinin geliştirilmesi aşamasından önce,
-                   veri ve ister analizi yapıldı ve veritabanının ER diyagramları oluşturuldu. Veritabanı geliştirildikten ve bir miktar veri eklendikten sonra; stored procedure'ler, view'lar ve 
-                   bir trigger geliştirildi. Son aşamada ise sınırlı işlevselliği olan bir web arayüzü geliştirildi.

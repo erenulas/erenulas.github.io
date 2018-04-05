@@ -32,8 +32,6 @@ plugins:
   - jekyll-seo-tag
   - "jekyll-github-metadata"
   - "jekyll-sitemap"
-  - jekyll-language-plugin
-  - jekyll-redirect-from
-
+  
 # Build settings
 markdown: kramdown

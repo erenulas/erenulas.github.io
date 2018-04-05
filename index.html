@@ -1,9 +1,7 @@
 ---
 layout: default
 title: Home
-languages:
-- en
-- tr
+permalink: /
 ---
 
 <section class="projects section-around" id="projects">
@@ -11,9 +9,9 @@ languages:
             <div class="row">
                 <div class="col-md-10 offset-md-1 col-10" style="margin-bottom:30px;padding:0px">
                         <h2 class="page-heading">
-                            <span class="page-title">{% t 'main.portfolio.title' %}</span>
+                            <span class="page-title">PORTFOLIO</span>
                         </h2>
-                  <p style="font-size:12px;opacity:0.6">* {% t 'main.portfolio.tip' %}...</p>
+                  <p style="font-size:12px;opacity:0.6">* Press on images for more info...</p>
                 </div>
             </div>
             <div class="row">
@@ -24,7 +22,7 @@ languages:
                 {% for project in row.rows %}
                 <div class="col-md-2 col-4 project-img {{project.id}}">
                     <a href="" class="project-btn" data-toggle="modal" data-target="#{{project.id}}">
-                        <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" alt="Logo for {{ project[page.language].title }} project" />
+                        <img class="img-fluid" src="/assets/img/portfolio/{{project.image}}" alt="Logo for {{ project.en.title }} project" />
                     </a>
                     {% include project-overview.html detail=project %}
                 </div>

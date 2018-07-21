@@ -101,7 +101,7 @@
 
 - rows:
   - id: coin-collecting-robot
-    image: coin_collecting_robot_new.png
+    image: coin_collecting_robot.png
     technologies: Java
     supervisor: Asst. Prof. Ömer Korçak
     supervisor-url: http://mimoza.marmara.edu.tr/~omer.korcak/
@@ -204,3 +204,100 @@
       description: The aim of this project was to create a website which will allow its users to order some car parts.<br><br>
                   Before the implementation, data and requirement analysis was done, and ER diagram for the database was created. After the development of the database, it was populated with some data and
                   stored procedures, views, and a trigger were created as well. Finally, a web interface with a very limited functionality was implemented.
+
+- rows:
+  - id: human-bot-detection
+    image: human_bot_detection.png
+    technologies: Python, scikit-learn, MongoDB
+    supervisor: Dr. Murat Can Ganiz
+    supervisor-url: 
+    en:
+      title: Human Bot Detection
+      parts:
+        - name: Human Bot Detection
+          github-url: https://github.com/erenulas/CSE4095S18_Group8
+      description: Bot accounts are one of the most important problems of social networks. Multiple models was created using various ML algorithms
+                   to differentiate bot, human, and organizaton accounts. Twitter accounts were tagged, and their tweets were collected and separated into tokens.
+                   Then, the following machine learning algorithms were applied on the dataset<br><br>
+                   <ul>
+                    <li>KMeans Clustering</li>
+                    <li>Naive Bayes</li>
+                    <li>Decision Tree</li>
+                    <li>Support Vector Machines</li>
+                    <li>k-Nearest Neighbor</li>
+                    <li>Logistic Regression</li>
+                   </ul>
+                   Three different settings were used for each supervised algorithm and these settings are<br><br>
+                   <ul>
+                    <li>Whole dataset was used both for training and testing</li>
+                    <li>10% of the dataset was used for training and the remaining 90% was used for testing</li>
+                    <li>10 fold cross validation was used.</li>
+                   </ul>
+                   Results were evaluated according to their accuracy, f1, precision, recall, and auc scores.
+
+  - id: cert-verification
+    image: cert_verification.png
+    technologies: Python, Flask, Bootstrap, HTML, CSS, Java
+    supervisor: Dr. Ali Haydar Özer
+    supervisor-url: 
+    en:
+      title: Certificate Verification Using Blockchain
+      parts:
+        - name: Web Application
+          github-url: https://github.com/erenulas/doc-verification-w-blockchain
+        - name: Android Application
+          github-url: https://github.com/erenulas/doc-verification-w-blockchain-app
+      description: A blockchain application was developed to issue and verify certificates. Each certificate can only be issued by the 
+                   permitted issuers through the website. Certificate holders can access their own certificates using the Android application.
+                   Verification of a certificate can be done through the website by searching the hash string of the block which contains the certificate.
+
+  - id: shell
+    image: shell.png
+    technologies: C
+    supervisor: Dr. Ali Haydar Özer
+    supervisor-url: 
+    en:
+      title: Shell
+      parts:
+        - name: Shell
+          github-url: https://github.com/erenulas/Shell
+      description: A simple shell is implemented. Background and foreground processes are supported along with the following commands<br><br>
+                  <ul>
+                    <li>'cd <destination>' - changes the current directory to <destination></li>
+                    <li>'dir' - prints the current working directory</li>
+                    <li>'clr' - clears the screen</li>
+                    <li>'wait' - waits until all background processes are complete</li>
+                    <li>'hist' - prints up to the 10 most recently entered commands in your shell.
+                      <ul>
+                        <li>'hist -set num' - sets the size of the history buffer to num</li>
+                        <li>'! n' - repeats the command that is entered on nth turn (1 for the 1st command in history)</li>
+                        <li>'! string' - repeats the command whose first two letter is same as string (cl for clr)</li>
+                      </ul>
+                    </li>
+                    <li>'exit' - terminates shell</li>
+                  </ul>
+                  This shell also supports the pipe operator if it doesn't involve multiple pipes.
+
+  - id: bfs-dfs
+    image: bfs_dfs.png
+    technologies: Python
+    supervisor: Dr. Ali Haydar Özer
+    supervisor-url: 
+    en:
+      title: Knight's Tour
+      parts:
+        - name: Knight's Tour
+          github-url: https://github.com/erenulas/knights-tour
+      description: 
+
+  - id: erenulas
+    image: erenulas.png
+    technologies: Bootstrap, HTML, CSS, Jekyll, GitHub Pages
+    supervisor: None
+    supervisor-url: 
+    en:
+      title: Portfolio
+      parts:
+        - name: Portfolio
+          github-url: https://github.com/erenulas/erenulas.github.io
+      description: 

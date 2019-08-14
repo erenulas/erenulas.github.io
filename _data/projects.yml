@@ -239,7 +239,7 @@
     image: cert_verification.png
     technologies: Python, Flask, Bootstrap, HTML, CSS, Java
     supervisor: Dr. Ali Haydar Özer
-    supervisor-url: 
+    supervisor-url: http://www.ahozer.com
     en:
       title: Certificate Verification Using Blockchain
       parts:
@@ -255,7 +255,7 @@
     image: shell.png
     technologies: C
     supervisor: Dr. Ali Haydar Özer
-    supervisor-url: 
+    supervisor-url: http://www.ahozer.com
     en:
       title: Shell
       parts:
@@ -282,22 +282,33 @@
     image: bfs_dfs.png
     technologies: Python
     supervisor: Dr. Ali Haydar Özer
-    supervisor-url: 
+    supervisor-url: http://www.ahozer.com
     en:
       title: Knight's Tour
       parts:
         - name: Knight's Tour
           github-url: https://github.com/erenulas/knights-tour
-      description: 
+      description: The knight is a piece in chess which moves like the letter 'L' (two squares horizontally - one square vertically or two squares vertically - one square horizontally).
+                   <a href="https://en.wikipedia.org/wiki/Knight%27s_tour" target="_blank">The Knight's tour</a> problem is about determining whether it is possible to find a path such 
+                   that the knight visits each square only once or not.<br><br>
+                   <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">Breadth-first search</a> and 
+                   <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">Depth-first search</a> are traversing algorithms that can be used to search trees or graphs.
+                   In Breadth-first search algorithm, tree or graph is searched level by level starting from the root. 
+                   However, in the latter one, the deepest node of each branch is visited first. Then, the remaining nodes are explored by backtracking.<br><br>
+                   In this project, a bfs and a dfs algorithms are implemented to find a knight's tour. A modified version of dfs is implemented as well. In the modified version, 
+                   dfs is combined with a node selection heuristic to improve the depth-first search algorithm's performance.
+
 
   - id: erenulas
     image: erenulas.png
-    technologies: Bootstrap, HTML, CSS, Jekyll, GitHub Pages
+    technologies: Bootstrap, HTML, CSS, Sass, Jekyll, GitHub Pages
     supervisor: None
     supervisor-url: 
     en:
-      title: Portfolio
+      title: Portfolio Website
       parts:
         - name: Portfolio
           github-url: https://github.com/erenulas/erenulas.github.io
-      description: 
+      description: <a href="https://pages.github.com" target="_blank">Github Pages</a> is a hosting service designed to host static web pages directly from a repository.
+                   <a href="https://jekyllrb.com" target="_blank">Jekyll</a> is a static site generator.<br><br>
+                   By using these two tools, I've built a portfolio website to display my projects and introduce myself.

@@ -379,7 +379,15 @@ a.footer-highlight {
     color: #3581B8;
 }
 
+.about-garanti {
+    @extend %about-span;
+    color: #004481;
+}
 
+.about-position-garanti {
+    @extend %about-span;
+    color: #632B30;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'bootstrap/bootstrap';

@@ -261,7 +261,7 @@
       parts:
         - name: Shell
           github-url: https://github.com/erenulas/Shell
-      description: A simple shell is implemented. Background and foreground processes are supported along with the following commands<br><br>
+      description: A simple shell was implemented. Background and foreground processes are supported along with the following commands<br><br>
                   <ul>
                     <li>'cd <destination>' - changes the current directory to <destination></li>
                     <li>'dir' - prints the current working directory</li>
@@ -295,8 +295,8 @@
                    <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">Depth-first search</a> are traversing algorithms that can be used to search trees or graphs.
                    In Breadth-first search algorithm, tree or graph is searched level by level starting from the root. 
                    However, in the latter one, the deepest node of each branch is visited first. Then, the remaining nodes are explored by backtracking.<br><br>
-                   In this project, a bfs and a dfs algorithms are implemented to find a knight's tour. A modified version of dfs is implemented as well. In the modified version, 
-                   dfs is combined with a node selection heuristic to improve the depth-first search algorithm's performance.
+                   In this project, a bfs and a dfs algorithms were implemented to find a knight's tour. A modified version of dfs was implemented as well. In the modified version, 
+                   dfs was combined with a node selection heuristic to improve the depth-first search algorithm's performance.
 
 
   - id: erenulas

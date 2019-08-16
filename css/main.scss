@@ -31,6 +31,14 @@ $on-laptop:        800px;
 $dark-color-yellow-background: #232020;
 
 
+$about-dept: purple;
+$about-university: #3C7A89;
+$about-warsaw: #D8973C;
+$about-dmw: #027BCE;
+$about-ziraat: #BA1B1D;
+$about-garanti: #004481;
+
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -294,6 +302,30 @@ a.footer-highlight {
     font-weight: 700;
 }
 
+%about-dept {
+    color: purple;
+}
+
+%about-university {
+    color: #3C7A89;
+}
+
+%about-warsaw {
+    color: #D8973C;
+}
+
+%about-dmw {
+    color: #027BCE;
+}
+
+%about-ziraat {
+    color: #BA1B1D;
+}
+
+%about-garanti {
+    color: #004481;
+}
+
 .about-istanbul {
     @extend %about-span;
     color: turquoise;
@@ -306,12 +338,12 @@ a.footer-highlight {
 
 .about-dept {
     @extend %about-span;
-    color: purple;
+    color: $about-dept;
 }
 
 .about-university {
     @extend %about-span;
-    color: #3C7A89;
+    color: $about-university;
 }
 
 .about-grad {
@@ -321,7 +353,7 @@ a.footer-highlight {
 
 .about-warsaw {
     @extend %about-span;
-    color: #D8973C;
+    color: $about-warsaw;
 }
 
 .about-erasmus {
@@ -336,12 +368,12 @@ a.footer-highlight {
 
 .about-dmw {
     @extend %about-span;
-    color: #027BCE;
+    color: $about-dmw;
 }
 
 .about-ziraat {
     @extend %about-span;
-    color: #BA1B1D;
+    color: $about-ziraat;
 }
 
 .about-startup {
@@ -381,12 +413,48 @@ a.footer-highlight {
 
 .about-garanti {
     @extend %about-span;
-    color: #004481;
+    color: $about-garanti;
 }
 
 .about-position-garanti {
     @extend %about-span;
     color: #632B30;
+}
+
+.a-dept {
+    &:hover{
+        text-decoration-color: $about-dept;
+    }   
+}
+
+.a-university {
+    &:hover{
+        text-decoration-color: $about-university;
+    }
+}
+
+.a-warsaw {
+    &:hover{
+        text-decoration-color: $about-warsaw;
+    }
+}
+
+.a-dmw {
+    &:hover{
+        text-decoration-color: $about-dmw;
+    }
+}
+
+.a-ziraat {
+    &:hover{
+        text-decoration-color: $about-ziraat;
+    }
+}
+
+.a-garanti {
+    &:hover{
+        text-decoration-color: $about-garanti;
+    }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)

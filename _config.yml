@@ -10,7 +10,7 @@
 # Site settings
 title: Eren Ulaş
 email: eren.ulas@yahoo.com
-description: Hi, I'm Eren Ulaş. A software developer and a computer engineering student at Marmara University.
+description: Hi, I'm Eren Ulaş. A junior software engineer.
 baseurl: ""
 url: "http://erenulas.me" # the base hostname & protocol for your site
 author: Eren Ulaş
@@ -27,6 +27,7 @@ social:
 language_data: data.lang.%%
 language_includes_dir: _i18n
 languages: ['en', 'tr']
+
 
 plugins:
   - jekyll-seo-tag

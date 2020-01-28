@@ -37,6 +37,7 @@ $about-warsaw: #D8973C;
 $about-dmw: #027BCE;
 $about-ziraat: #BA1B1D;
 $about-garanti: #004481;
+$about-amadeus: #08376C;
 
 
 // Use media queries like this:
@@ -326,6 +327,10 @@ a.footer-highlight {
     color: #004481;
 }
 
+%about-amadeus {
+    color: #08376C;
+}
+
 .about-istanbul {
     @extend %about-span;
     color: turquoise;
@@ -421,6 +426,26 @@ a.footer-highlight {
     color: #632B30;
 }
 
+.about-desc-garanti {
+    @extend %about-span;
+    color: #7FBF35;
+}
+
+.about-garanti-stack {
+    @extend %about-span;
+    color: #DE8937;
+}
+
+.about-amadeus {
+    @extend %about-span;
+    color: $about-amadeus;
+}
+
+.about-position-amadeus {
+    @extend %about-span;
+    color: #EBBB42;
+}
+
 .a-dept {
     &:hover{
         text-decoration-color: $about-dept;
@@ -454,6 +479,12 @@ a.footer-highlight {
 .a-garanti {
     &:hover{
         text-decoration-color: $about-garanti;
+    }
+}
+
+.a-amadeus {
+    &:hover{
+        text-decoration-color: $about-amadeus;
     }
 }
 

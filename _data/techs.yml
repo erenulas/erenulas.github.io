@@ -1,42 +1,60 @@
 - rows:
-  - name: Python
-    url: https://www.python.org/
-    image: python.png
-    width: 70
-
-
   - name: Java
     url: https://www.oracle.com/java/index.html
     image: java.png
     width: 50
 
+  - name: Spring
+    url: https://spring.io
+    image: spring.png
+    width: 140
 
-  - name: C
-    url: https://en.wikipedia.org/wiki/C_(programming_language)
-    image: c.png
-    width: 90
+  - name: Maven
+    url: https://maven.apache.org
+    image: maven.png
+    width: 110
+  
+  - name: Jenkins
+    url: https://jenkins.io
+    image: jenkins.png
+    width: 140
 
+  - name: Docker
+    url: https://www.docker.com
+    image: docker.png
+    width: 140
+  
+  - name: JUnit
+    url: https://junit.org/junit5/
+    image: junit.png
+    width: 110
 
-  - name: MongoDB
-    url: https://www.mongodb.com/
-    image: mongodb.jpg
-    width: 200
+  - name: Mockito
+    url: https://site.mockito.org
+    image: mockito.png
+    width: 110
 
+  - name: Oracle
+    url: https://www.oracle.com/database/technologies/appdev/sql.html
+    image: oracle.png
+    width: 220
 
-- rows:
+  - name: JavaScript
+    url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    image: javascript.png
+    width: 60
+
   - name: HTML5
     url: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
     image: html5.png
     width: 50
-
-
+  
   - name: CSS3
     url: https://developer.mozilla.org/en-US/docs/Web/CSS
     image: css3.png
     width: 50
 
-    
-  - name: Prolog
-    url: http://www.swi-prolog.org/
-    image: prolog.png
-    width: 110
+  - name: Gulp
+    url: https://gulpjs.com
+    image: gulp.png
+    width: 35
